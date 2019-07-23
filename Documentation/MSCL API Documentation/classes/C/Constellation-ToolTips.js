@@ -1,1 +1,1 @@
-NDContentPage.OnToolTipsLoaded({256:"<div class=\"NDToolTip TStruct LC\"><div class=\"TTSummary\">Contains the data for the InertialNode::setConstellationSettings API call.</div></div>"});
+NDContentPage.OnToolTipsLoaded({293:"<div class=\"NDToolTip TStruct LC\"><div class=\"TTSummary\">Contains the data for the InertialNode::setConstellationSettings API call.</div></div>"});

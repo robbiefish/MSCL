@@ -1,0 +1,1 @@
+NDFramePage.OnPageTitleLoaded("CClass:StreamInfo","StreamInfo");NDSummary.OnSummaryLoaded("CClass:StreamInfo",[["C/C++","C"]],[["Structs","Struct"],["Variables","Variable"]],[[313,0,0,"StreamInfo"],[314,0,1,"enabled","enabled"],[315,0,1,"outgoingPacketsDropped","outgoingPacketsDropped"]]);

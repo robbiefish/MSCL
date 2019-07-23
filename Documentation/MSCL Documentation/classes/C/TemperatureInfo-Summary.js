@@ -1,0 +1,1 @@
+NDFramePage.OnPageTitleLoaded("CClass:TemperatureInfo","TemperatureInfo");NDSummary.OnSummaryLoaded("CClass:TemperatureInfo",[["C/C++","C"]],[["Groups","Group"],["Structs","Struct"],["Variables","Variable"]],[[1568,0,1,"TemperatureInfo"],[1569,0,0,"Variables","Variables"],[1570,0,2,"onBoardTemp","onBoardTemp"],[1571,0,2,"lastReadInMS","lastReadInMS"],[1572,0,2,"error","error"]]);

@@ -1,0 +1,1 @@
+NDSearch.OnPrefixDataLoaded("pps",["Struct"],[["PpsPulseInfo",,[[,,,,0,"File:MicroStrain/Inertial/ExposedInertialTypes.h:PpsPulseInfo","CClass:PpsPulseInfo"]]]]);

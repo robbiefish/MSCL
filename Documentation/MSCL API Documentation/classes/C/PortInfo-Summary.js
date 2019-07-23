@@ -1,0 +1,1 @@
+NDFramePage.OnPageTitleLoaded("CClass:PortInfo","PortInfo");NDSummary.OnSummaryLoaded("CClass:PortInfo",[["C/C++","C"]],[["Structs","Struct"],["Variables","Variable"]],[[320,0,0,"PortInfo"],[321,0,1,"bytesWritten","bytesWritten"],[322,0,1,"bytesRead","bytesRead"],[323,0,1,"overrunsOnWrite","overrunsOnWrite"],[324,0,1,"overrunsOnRead","overrunsOnRead"]]);

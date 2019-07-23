@@ -1,0 +1,1 @@
+NDFramePage.OnPageTitleLoaded("CClass:PpsPulseInfo","PpsPulseInfo");NDSummary.OnSummaryLoaded("CClass:PpsPulseInfo",[["C/C++","C"]],[["Groups","Group"],["Structs","Struct"],["Variables","Variable"]],[[1549,0,1,"PpsPulseInfo"],[1550,0,0,"Variables","Variables"],[1551,0,2,"count","count"],[1552,0,2,"lastTimeinMS","lastTimeinMS"]]);

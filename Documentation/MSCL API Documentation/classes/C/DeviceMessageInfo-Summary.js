@@ -1,0 +1,1 @@
+NDFramePage.OnPageTitleLoaded("CClass:DeviceMessageInfo","DeviceMessageInfo");NDSummary.OnSummaryLoaded("CClass:DeviceMessageInfo",[["C/C++","C"]],[["Structs","Struct"],["Variables","Variable"]],[[316,0,0,"DeviceMessageInfo"],[317,0,1,"messageParsingErrors","messageParsingErrors"],[318,0,1,"messagesRead","messagesRead"],[319,0,1,"lastMessageReadinMS","lastMessageReadinMS"]]);

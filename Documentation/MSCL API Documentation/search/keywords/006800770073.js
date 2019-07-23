@@ -1,1 +1,0 @@
-NDSearch.OnPrefixDataLoaded("hws",["Enumeration"],[["HwStatus_SensorState",,[[,,,,0,"File:MicroStrain/Inertial/ExposedInertialTypes.h:HwStatus_SensorState"]]]]);
