@@ -1,1 +1,1 @@
-NDContentPage.OnToolTipsLoaded({612:"<div class=\"NDToolTip TStruct LC\"><div class=\"TTSummary\">Contains an &lt;Command&gt; id and a &lt;BytesCollection&gt; vector to store the actual bytes to send to the device for that command.</div></div>"});
+NDContentPage.OnToolTipsLoaded({640:"<div class=\"NDToolTip TStruct LC\"><div class=\"TTSummary\">Contains an &lt;Command&gt; id and a &lt;BytesCollection&gt; vector to store the actual bytes to send to the device for that command.</div></div>"});

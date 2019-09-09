@@ -8,154 +8,160 @@
 
 <body onload="NDLoader.OnLoad('Content');" class="NDPage NDContentPage">
 
-<a name="Topic329"></a><div class="CTopic TClass LC first">
+<a name="Topic371"></a><div class="CTopic TClass LC first">
  <div class="CTitle">DeviceStatusData</div>
- <div class="NDClassPrototype" id="NDClassPrototype329"><div class="CPEntry TClass Current"><div class="CPName">DeviceStatusData</div></div></div>
- <div class="CBody"><p>Contains the data needed by the <a href="../../index.html#CClass:InertialNode:getBasicDeviceStatus" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,700);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >InertialNode::getBasicDeviceStatus</a> method.</p></div>
+ <div class="NDClassPrototype" id="NDClassPrototype371"><div class="CPEntry TClass Current"><div class="CPName">DeviceStatusData</div></div></div>
+ <div class="CBody"><p>Contains the data needed by the <a href="../../index.html#CClass:InertialNode:getBasicDeviceStatus" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,721);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >InertialNode::getBasicDeviceStatus</a> method.</p></div>
 </div>
 
-<a name="StatusSelector"></a><a name="Topic330"></a><div class="CTopic TEnumeration LC">
+<a name="StatusSelector"></a><a name="Topic372"></a><div class="CTopic TEnumeration LC">
  <div class="CTitle">StatusSelector</div>
- <div class="CBody"><p>Represents the two different types of statuses returned by DeviceStatus.</p><table class="CDefinitionList"><tr><td class="CDLEntry"><a name="BASIC_STATUS_STRUCTURE"></a><a name="Topic331"></a>BASIC_STATUS_STRUCTURE</td><td class="CDLDefinition"><p>0x01&nbsp; used to receive a limited device status.</p></td></tr><tr><td class="CDLEntry"><a name="DIAGNOSTIC_STATUS_STRUCTURE"></a><a name="Topic332"></a>DIAGNOSTIC_STATUS_STRUCTURE</td><td class="CDLDefinition"><p>0x02&nbsp; used to receive a complete device status.</p></td></tr></table></div>
+ <div class="CBody"><p>Represents the two different types of statuses returned by DeviceStatus.</p><table class="CDefinitionList"><tr><td class="CDLEntry"><a name="BASIC_STATUS_STRUCTURE"></a><a name="Topic373"></a>BASIC_STATUS_STRUCTURE</td><td class="CDLDefinition"><p>0x01&nbsp; used to receive a limited device status.</p></td></tr><tr><td class="CDLEntry"><a name="DIAGNOSTIC_STATUS_STRUCTURE"></a><a name="Topic374"></a>DIAGNOSTIC_STATUS_STRUCTURE</td><td class="CDLDefinition"><p>0x02&nbsp; used to receive a complete device status.</p></td></tr></table></div>
 </div>
 
-<a name="SystemState"></a><a name="Topic333"></a><div class="CTopic TEnumeration LC">
+<a name="SystemState"></a><a name="Topic375"></a><div class="CTopic TEnumeration LC">
  <div class="CTitle">SystemState</div>
  <div class="CBody"><p>Enum of available system states.</p><p>SYSTEM_INITIALIZATION = 0x0001 SYSTEM_STARTUP = 0x0002 SYSTEM_RUNNING = 0x0003</p></div>
 </div>
 
-<a name="model"></a><a name="Topic334"></a><div class="CTopic TVariable LC">
+<a name="DeviceStatusData"></a><a name="Topic376"></a><div class="CTopic TFunction LC">
+ <div class="CTitle">DeviceStatusData</div>
+ <div id="NDPrototype376" class="NDPrototype NoParameterForm">DeviceStatusData()</div>
+ <div class="CBody"><p>Creates a DeviceStatusData object with default values.</p></div>
+</div>
+
+<a name="model"></a><a name="Topic377"></a><div class="CTopic TVariable LC">
  <div class="CTitle">model</div>
- <div id="NDPrototype334" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint16</span> modelNumber</div>
+ <div id="NDPrototype377" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint16</span> modelNumber</div>
 </div>
 
-<a name="statusStructure"></a><a name="Topic335"></a><div class="CTopic TVariable LC">
+<a name="statusStructure"></a><a name="Topic378"></a><div class="CTopic TVariable LC">
  <div class="CTitle">statusStructure</div>
- <div id="NDPrototype335" class="NDPrototype NoParameterForm"><a href="../../index.html#CClass:DeviceStatusData:StatusSelector" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,330);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >StatusSelector</a> statusStructure</div>
+ <div id="NDPrototype378" class="NDPrototype NoParameterForm"><a href="../../index.html#CClass:DeviceStatusData:StatusSelector" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,372);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >StatusSelector</a> statusStructure</div>
 </div>
 
-<a name="systemTimerInMS"></a><a name="Topic336"></a><div class="CTopic TVariable LC">
+<a name="systemTimerInMS"></a><a name="Topic379"></a><div class="CTopic TVariable LC">
  <div class="CTitle">systemTimerInMS</div>
- <div id="NDPrototype336" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint32</span> systemTimerInMS</div>
+ <div id="NDPrototype379" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint32</span> systemTimerInMS</div>
 </div>
 
-<a name="systemState"></a><a name="Topic337"></a><div class="CTopic TFunction LC">
+<a name="systemState"></a><a name="Topic380"></a><div class="CTopic TFunction LC">
  <div class="CTitle">systemState</div>
- <div id="NDPrototype337" class="NDPrototype NoParameterForm"><a href="../../index.html#CClass:DeviceStatusData:SystemState" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,333);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >SystemState</a> systemState()</div>
+ <div id="NDPrototype380" class="NDPrototype NoParameterForm"><a href="../../index.html#CClass:DeviceStatusData:SystemState" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,375);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >SystemState</a> systemState()</div>
  <div class="CBody"><p>get or set m_systemState</p></div>
 </div>
 
-<a name="gnssPowerStateOn"></a><a name="Topic338"></a><div class="CTopic TFunction LC">
+<a name="gnssPowerStateOn"></a><a name="Topic381"></a><div class="CTopic TFunction LC">
  <div class="CTitle">gnssPowerStateOn</div>
- <div id="NDPrototype338" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> gnssPowerStateOn() <span class="SHKeyword">const</span></div>
+ <div id="NDPrototype381" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> gnssPowerStateOn() <span class="SHKeyword">const</span></div>
  <div class="CBody"><p>get or set m_gnssPowerStateOn</p></div>
 </div>
 
-<a name="gnss1PpsPulseInfo"></a><a name="Topic339"></a><div class="CTopic TFunction LC">
+<a name="gnss1PpsPulseInfo"></a><a name="Topic382"></a><div class="CTopic TFunction LC">
  <div class="CTitle">gnss1PpsPulseInfo</div>
- <div id="NDPrototype339" class="NDPrototype NoParameterForm"><a href="../../index.html#CClass:PpsPulseInfo" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,310);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >PpsPulseInfo</a> gnss1PpsPulseInfo()</div>
+ <div id="NDPrototype382" class="NDPrototype NoParameterForm"><a href="../../index.html#CClass:PpsPulseInfo" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,347);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >PpsPulseInfo</a> gnss1PpsPulseInfo()</div>
  <div class="CBody"><p>get or set m_gnss1PpsPulseInfo</p></div>
 </div>
 
-<a name="imuStreamInfo"></a><a name="Topic340"></a><div class="CTopic TFunction LC">
+<a name="imuStreamInfo"></a><a name="Topic383"></a><div class="CTopic TFunction LC">
  <div class="CTitle">imuStreamInfo</div>
- <div id="NDPrototype340" class="NDPrototype NoParameterForm"><a href="../../index.html#CClass:StreamInfo" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,313);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >StreamInfo</a> imuStreamInfo()</div>
+ <div id="NDPrototype383" class="NDPrototype NoParameterForm"><a href="../../index.html#CClass:StreamInfo" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,351);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >StreamInfo</a> imuStreamInfo()</div>
  <div class="CBody"><p>get or set m_imuStreamInfo</p></div>
 </div>
 
-<a name="gnssStreamInfo"></a><a name="Topic341"></a><div class="CTopic TFunction LC">
+<a name="gnssStreamInfo"></a><a name="Topic384"></a><div class="CTopic TFunction LC">
  <div class="CTitle">gnssStreamInfo</div>
- <div id="NDPrototype341" class="NDPrototype NoParameterForm"><a href="../../index.html#CClass:StreamInfo" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,313);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >StreamInfo</a> gnssStreamInfo()</div>
+ <div id="NDPrototype384" class="NDPrototype NoParameterForm"><a href="../../index.html#CClass:StreamInfo" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,351);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >StreamInfo</a> gnssStreamInfo()</div>
  <div class="CBody"><p>get or set m_gnssStreamInfo</p></div>
 </div>
 
-<a name="estimationFilterStreamInfo"></a><a name="Topic342"></a><div class="CTopic TFunction LC">
+<a name="estimationFilterStreamInfo"></a><a name="Topic385"></a><div class="CTopic TFunction LC">
  <div class="CTitle">estimationFilterStreamInfo</div>
- <div id="NDPrototype342" class="NDPrototype NoParameterForm"><a href="../../index.html#CClass:StreamInfo" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,313);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >StreamInfo</a> estimationFilterStreamInfo()</div>
+ <div id="NDPrototype385" class="NDPrototype NoParameterForm"><a href="../../index.html#CClass:StreamInfo" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,351);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >StreamInfo</a> estimationFilterStreamInfo()</div>
  <div class="CBody"><p>get or set m_estimationFilterStreamInfo</p></div>
 </div>
 
-<a name="imuMessageInfo"></a><a name="Topic343"></a><div class="CTopic TFunction LC">
+<a name="imuMessageInfo"></a><a name="Topic386"></a><div class="CTopic TFunction LC">
  <div class="CTitle">imuMessageInfo</div>
- <div id="NDPrototype343" class="NDPrototype NoParameterForm"><a href="../../index.html#CClass:DeviceMessageInfo" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,316);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >DeviceMessageInfo</a> imuMessageInfo()</div>
+ <div id="NDPrototype386" class="NDPrototype NoParameterForm"><a href="../../index.html#CClass:DeviceMessageInfo" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,355);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >DeviceMessageInfo</a> imuMessageInfo()</div>
  <div class="CBody"><p>get or set m_imuMessageInfo</p></div>
 </div>
 
-<a name="gnssMessageInfo"></a><a name="Topic344"></a><div class="CTopic TFunction LC">
+<a name="gnssMessageInfo"></a><a name="Topic387"></a><div class="CTopic TFunction LC">
  <div class="CTitle">gnssMessageInfo</div>
- <div id="NDPrototype344" class="NDPrototype NoParameterForm"><a href="../../index.html#CClass:DeviceMessageInfo" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,316);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >DeviceMessageInfo</a> gnssMessageInfo()</div>
+ <div id="NDPrototype387" class="NDPrototype NoParameterForm"><a href="../../index.html#CClass:DeviceMessageInfo" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,355);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >DeviceMessageInfo</a> gnssMessageInfo()</div>
  <div class="CBody"><p>get or set m_gnssMessageInfo</p></div>
 </div>
 
-<a name="comPortInfo"></a><a name="Topic345"></a><div class="CTopic TFunction LC">
+<a name="comPortInfo"></a><a name="Topic388"></a><div class="CTopic TFunction LC">
  <div class="CTitle">comPortInfo</div>
- <div id="NDPrototype345" class="NDPrototype NoParameterForm"><a href="../../index.html#CClass:PortInfo" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,320);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >PortInfo</a> comPortInfo()</div>
+ <div id="NDPrototype388" class="NDPrototype NoParameterForm"><a href="../../index.html#CClass:PortInfo" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,360);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >PortInfo</a> comPortInfo()</div>
  <div class="CBody"><p>get or set m_comPortInfo</p></div>
 </div>
 
-<a name="usbPortInfo"></a><a name="Topic346"></a><div class="CTopic TFunction LC">
+<a name="usbPortInfo"></a><a name="Topic389"></a><div class="CTopic TFunction LC">
  <div class="CTitle">usbPortInfo</div>
- <div id="NDPrototype346" class="NDPrototype NoParameterForm"><a href="../../index.html#CClass:PortInfo" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,320);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >PortInfo</a> usbPortInfo()</div>
+ <div id="NDPrototype389" class="NDPrototype NoParameterForm"><a href="../../index.html#CClass:PortInfo" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,360);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >PortInfo</a> usbPortInfo()</div>
  <div class="CBody"><p>get or set m_usbPortInfo</p></div>
 </div>
 
-<a name="hasMagnetometer"></a><a name="Topic347"></a><div class="CTopic TFunction LC">
+<a name="hasMagnetometer"></a><a name="Topic390"></a><div class="CTopic TFunction LC">
  <div class="CTitle">hasMagnetometer</div>
- <div id="NDPrototype347" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> hasMagnetometer() <span class="SHKeyword">const</span></div>
+ <div id="NDPrototype390" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> hasMagnetometer() <span class="SHKeyword">const</span></div>
  <div class="CBody"><p>get or set m_hasMagnetometer</p></div>
 </div>
 
-<a name="magnetometerInitializationFailed"></a><a name="Topic348"></a><div class="CTopic TFunction LC">
+<a name="magnetometerInitializationFailed"></a><a name="Topic391"></a><div class="CTopic TFunction LC">
  <div class="CTitle">magnetometerInitializationFailed</div>
- <div id="NDPrototype348" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> magnetometerInitializationFailed() <span class="SHKeyword">const</span></div>
+ <div id="NDPrototype391" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> magnetometerInitializationFailed() <span class="SHKeyword">const</span></div>
  <div class="CBody"><p>get or set m_magnetometerInitializationFailed</p></div>
 </div>
 
-<a name="hasPressure"></a><a name="Topic349"></a><div class="CTopic TFunction LC">
+<a name="hasPressure"></a><a name="Topic392"></a><div class="CTopic TFunction LC">
  <div class="CTitle">hasPressure</div>
- <div id="NDPrototype349" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> hasPressure() <span class="SHKeyword">const</span></div>
+ <div id="NDPrototype392" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> hasPressure() <span class="SHKeyword">const</span></div>
  <div class="CBody"><p>get or set m_hasPressure</p></div>
 </div>
 
-<a name="pressureInitializationFailed"></a><a name="Topic350"></a><div class="CTopic TFunction LC">
+<a name="pressureInitializationFailed"></a><a name="Topic393"></a><div class="CTopic TFunction LC">
  <div class="CTitle">pressureInitializationFailed</div>
- <div id="NDPrototype350" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> pressureInitializationFailed() <span class="SHKeyword">const</span></div>
+ <div id="NDPrototype393" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> pressureInitializationFailed() <span class="SHKeyword">const</span></div>
  <div class="CBody"><p>get or set m_pressureInitializationFailed</p></div>
 </div>
 
-<a name="gnssReceiverInitializationFailed"></a><a name="Topic351"></a><div class="CTopic TFunction LC">
+<a name="gnssReceiverInitializationFailed"></a><a name="Topic394"></a><div class="CTopic TFunction LC">
  <div class="CTitle">gnssReceiverInitializationFailed</div>
- <div id="NDPrototype351" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> gnssReceiverInitializationFailed() <span class="SHKeyword">const</span></div>
+ <div id="NDPrototype394" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> gnssReceiverInitializationFailed() <span class="SHKeyword">const</span></div>
  <div class="CBody"><p>get or set m_gnssReceiverInitializationFailed</p></div>
 </div>
 
-<a name="coldStartOnPowerOn"></a><a name="Topic352"></a><div class="CTopic TFunction LC">
+<a name="coldStartOnPowerOn"></a><a name="Topic395"></a><div class="CTopic TFunction LC">
  <div class="CTitle">coldStartOnPowerOn</div>
- <div id="NDPrototype352" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> coldStartOnPowerOn() <span class="SHKeyword">const</span></div>
+ <div id="NDPrototype395" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> coldStartOnPowerOn() <span class="SHKeyword">const</span></div>
  <div class="CBody"><p>get or set m_coldStartOnPowerOn</p></div>
 </div>
 
-<a name="temperatureInfo"></a><a name="Topic353"></a><div class="CTopic TFunction LC">
+<a name="temperatureInfo"></a><a name="Topic396"></a><div class="CTopic TFunction LC">
  <div class="CTitle">temperatureInfo</div>
- <div id="NDPrototype353" class="NDPrototype NoParameterForm"><a href="../../index.html#CClass:TemperatureInfo" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,325);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >TemperatureInfo</a> temperatureInfo()</div>
+ <div id="NDPrototype396" class="NDPrototype NoParameterForm"><a href="../../index.html#CClass:TemperatureInfo" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,366);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >TemperatureInfo</a> temperatureInfo()</div>
  <div class="CBody"><p>get or set m_temperatureInfo</p></div>
 </div>
 
-<a name="powerState"></a><a name="Topic354"></a><div class="CTopic TFunction LC">
+<a name="powerState"></a><a name="Topic397"></a><div class="CTopic TFunction LC">
  <div class="CTitle">powerState</div>
- <div id="NDPrototype354" class="NDPrototype NoParameterForm">InertialTypes::PowerState powerState() <span class="SHKeyword">const</span></div>
+ <div id="NDPrototype397" class="NDPrototype NoParameterForm">InertialTypes::PowerState powerState() <span class="SHKeyword">const</span></div>
  <div class="CBody"><p>get or set m_powerState</p></div>
 </div>
 
-<a name="gyroRange"></a><a name="Topic355"></a><div class="CTopic TFunction LC">
+<a name="gyroRange"></a><a name="Topic398"></a><div class="CTopic TFunction LC">
  <div class="CTitle">gyroRange</div>
- <div id="NDPrototype355" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint16</span> gyroRange() <span class="SHKeyword">const</span></div>
+ <div id="NDPrototype398" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint16</span> gyroRange() <span class="SHKeyword">const</span></div>
  <div class="CBody"><p>get or set m_gyroRange</p></div>
 </div>
 
-<a name="accelRange"></a><a name="Topic356"></a><div class="CTopic TFunction LC last">
+<a name="accelRange"></a><a name="Topic399"></a><div class="CTopic TFunction LC last">
  <div class="CTitle">accelRange</div>
- <div id="NDPrototype356" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint16</span> accelRange() <span class="SHKeyword">const</span></div>
+ <div id="NDPrototype399" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint16</span> accelRange() <span class="SHKeyword">const</span></div>
  <div class="CBody"><p>get or set m_accelRange</p></div>
 </div>
 

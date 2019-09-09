@@ -1,1 +1,1 @@
-NDSearch.OnPrefixDataLoaded("veh",["Enumeration"],[["VehicleModeType",,[[,,,,0,"File:MicroStrain/Inertial/ExposedInertialTypes.h:VehicleModeType"]]]]);
+NDSearch.OnPrefixDataLoaded("veh",["Enumeration","Type"],[["VehicleModeType",,[[,,,,0,"File:MicroStrain/Inertial/ExposedInertialTypes.h:VehicleModeType"]]],["VehicleModeTypes",,[[,,,,1,"File:MicroStrain/Inertial/ExposedInertialTypes.h:VehicleModeTypes"]]]]);

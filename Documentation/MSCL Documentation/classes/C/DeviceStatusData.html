@@ -8,284 +8,294 @@
 
 <body onload="NDLoader.OnLoad('Content');" class="NDPage NDContentPage">
 
-<a name="Topic1573"></a><div class="CTopic TClass LC first">
+<a name="Topic1688"></a><div class="CTopic TClass LC first">
  <div class="CTitle">DeviceStatusData</div>
- <div class="NDClassPrototype" id="NDClassPrototype1573"><div class="CPEntry TClass Current"><div class="CPName">DeviceStatusData</div></div></div>
- <div class="CBody"><p>Contains the data needed by the <a href="../../index.html#CClass:InertialNode:getBasicDeviceStatus" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1836);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >InertialNode::getBasicDeviceStatus</a> method.</p></div>
+ <div class="NDClassPrototype" id="NDClassPrototype1688"><div class="CPEntry TClass Current"><div class="CPName">DeviceStatusData</div></div></div>
+ <div class="CBody"><p>Contains the data needed by the <a href="../../index.html#CClass:InertialNode:getBasicDeviceStatus" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1948);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >InertialNode::getBasicDeviceStatus</a> method.</p></div>
 </div>
 
-<a name="Types"></a><a name="Topic1574"></a><div class="CTopic TGroup LC">
+<a name="Types"></a><a name="Topic1689"></a><div class="CTopic TGroup LC">
  <div class="CTitle">Types</div>
 </div>
 
-<a name="StatusSelector"></a><a name="Topic1575"></a><div class="CTopic TEnumeration LC">
+<a name="StatusSelector"></a><a name="Topic1690"></a><div class="CTopic TEnumeration LC">
  <div class="CTitle">StatusSelector</div>
- <div class="CBody"><p>Represents the two different types of statuses returned by DeviceStatus.</p><table class="CDefinitionList"><tr><td class="CDLEntry"><a name="BASIC_STATUS_STRUCTURE"></a><a name="Topic1576"></a>BASIC_STATUS_STRUCTURE</td><td class="CDLDefinition"><p>0x01&nbsp; used to receive a limited device status.</p></td></tr><tr><td class="CDLEntry"><a name="DIAGNOSTIC_STATUS_STRUCTURE"></a><a name="Topic1577"></a>DIAGNOSTIC_STATUS_STRUCTURE</td><td class="CDLDefinition"><p>0x02&nbsp; used to receive a complete device status.</p></td></tr></table></div>
+ <div class="CBody"><p>Represents the two different types of statuses returned by DeviceStatus.</p><table class="CDefinitionList"><tr><td class="CDLEntry"><a name="BASIC_STATUS_STRUCTURE"></a><a name="Topic1691"></a>BASIC_STATUS_STRUCTURE</td><td class="CDLDefinition"><p>0x01&nbsp; used to receive a limited device status.</p></td></tr><tr><td class="CDLEntry"><a name="DIAGNOSTIC_STATUS_STRUCTURE"></a><a name="Topic1692"></a>DIAGNOSTIC_STATUS_STRUCTURE</td><td class="CDLDefinition"><p>0x02&nbsp; used to receive a complete device status.</p></td></tr></table></div>
 </div>
 
-<a name="SystemState"></a><a name="Topic1578"></a><div class="CTopic TEnumeration LC">
+<a name="SystemState"></a><a name="Topic1693"></a><div class="CTopic TEnumeration LC">
  <div class="CTitle">SystemState</div>
  <div class="CBody"><p>Enum of available system states.</p><p>SYSTEM_INITIALIZATION = 0x0001 SYSTEM_STARTUP = 0x0002 SYSTEM_RUNNING = 0x0003</p></div>
 </div>
 
-<a name="Variables"></a><a name="Topic1579"></a><div class="CTopic TGroup LC">
- <div class="CTitle">Variables</div>
-</div>
-
-<a name="model"></a><a name="Topic1580"></a><div class="CTopic TVariable LC">
- <div class="CTitle">model</div>
- <div id="NDPrototype1580" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint16</span> modelNumber</div>
-</div>
-
-<a name="statusStructure"></a><a name="Topic1581"></a><div class="CTopic TVariable LC">
- <div class="CTitle">statusStructure</div>
- <div id="NDPrototype1581" class="NDPrototype NoParameterForm"><a href="../../index.html#CClass:DeviceStatusData:StatusSelector" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1575);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >StatusSelector</a> statusStructure</div>
-</div>
-
-<a name="systemTimerInMS"></a><a name="Topic1582"></a><div class="CTopic TVariable LC">
- <div class="CTitle">systemTimerInMS</div>
- <div id="NDPrototype1582" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint32</span> systemTimerInMS</div>
-</div>
-
-<a name="Functions"></a><a name="Topic1583"></a><div class="CTopic TGroup LC">
+<a name="Functions"></a><a name="Topic1694"></a><div class="CTopic TGroup LC">
  <div class="CTitle">Functions</div>
 </div>
 
-<a name="systemState"></a><a name="Topic1584"></a><div class="CTopic TFunction LC">
- <div class="CTitle">systemState</div>
- <div id="NDPrototype1584" class="NDPrototype NoParameterForm"><a href="../../index.html#CClass:DeviceStatusData:SystemState" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1578);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >SystemState</a> systemState()</div>
- <div class="CBody"><p>get or set m_systemState</p></div>
+<a name="DeviceStatusData"></a><a name="Topic1695"></a><div class="CTopic TFunction LC">
+ <div class="CTitle">DeviceStatusData</div>
+ <div id="NDPrototype1695" class="NDPrototype NoParameterForm">DeviceStatusData()</div>
+ <div class="CBody"><p>Creates a DeviceStatusData object with default values.</p></div>
 </div>
 
-<a name="gnssPowerStateOn"></a><a name="Topic1585"></a><div class="CTopic TFunction LC">
- <div class="CTitle">gnssPowerStateOn</div>
- <div id="NDPrototype1585" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> gnssPowerStateOn() <span class="SHKeyword">const</span></div>
- <div class="CBody"><p>get or set m_gnssPowerStateOn</p></div>
-</div>
-
-<a name="gnss1PpsPulseInfo"></a><a name="Topic1586"></a><div class="CTopic TFunction LC">
- <div class="CTitle">gnss1PpsPulseInfo</div>
- <div id="NDPrototype1586" class="NDPrototype NoParameterForm"><a href="../../index.html#CClass:PpsPulseInfo" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1549);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >PpsPulseInfo</a> gnss1PpsPulseInfo()</div>
- <div class="CBody"><p>get or set m_gnss1PpsPulseInfo</p></div>
-</div>
-
-<a name="imuStreamInfo"></a><a name="Topic1587"></a><div class="CTopic TFunction LC">
- <div class="CTitle">imuStreamInfo</div>
- <div id="NDPrototype1587" class="NDPrototype NoParameterForm"><a href="../../index.html#CClass:StreamInfo" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1553);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >StreamInfo</a> imuStreamInfo()</div>
- <div class="CBody"><p>get or set m_imuStreamInfo</p></div>
-</div>
-
-<a name="gnssStreamInfo"></a><a name="Topic1588"></a><div class="CTopic TFunction LC">
- <div class="CTitle">gnssStreamInfo</div>
- <div id="NDPrototype1588" class="NDPrototype NoParameterForm"><a href="../../index.html#CClass:StreamInfo" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1553);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >StreamInfo</a> gnssStreamInfo()</div>
- <div class="CBody"><p>get or set m_gnssStreamInfo</p></div>
-</div>
-
-<a name="estimationFilterStreamInfo"></a><a name="Topic1589"></a><div class="CTopic TFunction LC">
- <div class="CTitle">estimationFilterStreamInfo</div>
- <div id="NDPrototype1589" class="NDPrototype NoParameterForm"><a href="../../index.html#CClass:StreamInfo" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1553);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >StreamInfo</a> estimationFilterStreamInfo()</div>
- <div class="CBody"><p>get or set m_estimationFilterStreamInfo</p></div>
-</div>
-
-<a name="imuMessageInfo"></a><a name="Topic1590"></a><div class="CTopic TFunction LC">
- <div class="CTitle">imuMessageInfo</div>
- <div id="NDPrototype1590" class="NDPrototype NoParameterForm"><a href="../../index.html#CClass:DeviceMessageInfo" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1557);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >DeviceMessageInfo</a> imuMessageInfo()</div>
- <div class="CBody"><p>get or set m_imuMessageInfo</p></div>
-</div>
-
-<a name="gnssMessageInfo"></a><a name="Topic1591"></a><div class="CTopic TFunction LC">
- <div class="CTitle">gnssMessageInfo</div>
- <div id="NDPrototype1591" class="NDPrototype NoParameterForm"><a href="../../index.html#CClass:DeviceMessageInfo" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1557);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >DeviceMessageInfo</a> gnssMessageInfo()</div>
- <div class="CBody"><p>get or set m_gnssMessageInfo</p></div>
-</div>
-
-<a name="comPortInfo"></a><a name="Topic1592"></a><div class="CTopic TFunction LC">
- <div class="CTitle">comPortInfo</div>
- <div id="NDPrototype1592" class="NDPrototype NoParameterForm"><a href="../../index.html#CClass:PortInfo" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1562);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >PortInfo</a> comPortInfo()</div>
- <div class="CBody"><p>get or set m_comPortInfo</p></div>
-</div>
-
-<a name="usbPortInfo"></a><a name="Topic1593"></a><div class="CTopic TFunction LC">
- <div class="CTitle">usbPortInfo</div>
- <div id="NDPrototype1593" class="NDPrototype NoParameterForm"><a href="../../index.html#CClass:PortInfo" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1562);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >PortInfo</a> usbPortInfo()</div>
- <div class="CBody"><p>get or set m_usbPortInfo</p></div>
-</div>
-
-<a name="hasMagnetometer"></a><a name="Topic1594"></a><div class="CTopic TFunction LC">
- <div class="CTitle">hasMagnetometer</div>
- <div id="NDPrototype1594" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> hasMagnetometer() <span class="SHKeyword">const</span></div>
- <div class="CBody"><p>get or set m_hasMagnetometer</p></div>
-</div>
-
-<a name="magnetometerInitializationFailed"></a><a name="Topic1595"></a><div class="CTopic TFunction LC">
- <div class="CTitle">magnetometerInitializationFailed</div>
- <div id="NDPrototype1595" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> magnetometerInitializationFailed() <span class="SHKeyword">const</span></div>
- <div class="CBody"><p>get or set m_magnetometerInitializationFailed</p></div>
-</div>
-
-<a name="hasPressure"></a><a name="Topic1596"></a><div class="CTopic TFunction LC">
- <div class="CTitle">hasPressure</div>
- <div id="NDPrototype1596" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> hasPressure() <span class="SHKeyword">const</span></div>
- <div class="CBody"><p>get or set m_hasPressure</p></div>
-</div>
-
-<a name="pressureInitializationFailed"></a><a name="Topic1597"></a><div class="CTopic TFunction LC">
- <div class="CTitle">pressureInitializationFailed</div>
- <div id="NDPrototype1597" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> pressureInitializationFailed() <span class="SHKeyword">const</span></div>
- <div class="CBody"><p>get or set m_pressureInitializationFailed</p></div>
-</div>
-
-<a name="gnssReceiverInitializationFailed"></a><a name="Topic1598"></a><div class="CTopic TFunction LC">
- <div class="CTitle">gnssReceiverInitializationFailed</div>
- <div id="NDPrototype1598" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> gnssReceiverInitializationFailed() <span class="SHKeyword">const</span></div>
- <div class="CBody"><p>get or set m_gnssReceiverInitializationFailed</p></div>
-</div>
-
-<a name="coldStartOnPowerOn"></a><a name="Topic1599"></a><div class="CTopic TFunction LC">
- <div class="CTitle">coldStartOnPowerOn</div>
- <div id="NDPrototype1599" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> coldStartOnPowerOn() <span class="SHKeyword">const</span></div>
- <div class="CBody"><p>get or set m_coldStartOnPowerOn</p></div>
-</div>
-
-<a name="temperatureInfo"></a><a name="Topic1600"></a><div class="CTopic TFunction LC">
- <div class="CTitle">temperatureInfo</div>
- <div id="NDPrototype1600" class="NDPrototype NoParameterForm"><a href="../../index.html#CClass:TemperatureInfo" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1568);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >TemperatureInfo</a> temperatureInfo()</div>
- <div class="CBody"><p>get or set m_temperatureInfo</p></div>
-</div>
-
-<a name="powerState"></a><a name="Topic1601"></a><div class="CTopic TFunction LC">
- <div class="CTitle">powerState</div>
- <div id="NDPrototype1601" class="NDPrototype NoParameterForm">InertialTypes::PowerState powerState() <span class="SHKeyword">const</span></div>
- <div class="CBody"><p>get or set m_powerState</p></div>
-</div>
-
-<a name="gyroRange"></a><a name="Topic1602"></a><div class="CTopic TFunction LC">
- <div class="CTitle">gyroRange</div>
- <div id="NDPrototype1602" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint16</span> gyroRange() <span class="SHKeyword">const</span></div>
- <div class="CBody"><p>get or set m_gyroRange</p></div>
-</div>
-
-<a name="accelRange"></a><a name="Topic1603"></a><div class="CTopic TFunction LC">
- <div class="CTitle">accelRange</div>
- <div id="NDPrototype1603" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint16</span> accelRange() <span class="SHKeyword">const</span></div>
- <div class="CBody"><p>get or set m_accelRange</p></div>
-</div>
-
-<a name="checkValue"></a><a name="Topic1604"></a><div class="CTopic TFunction LC">
- <div class="CTitle">checkValue</div>
- <div id="NDPrototype1604" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">template</span>&lt;typename T&gt; <span class="SHKeyword">void</span> checkValue(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PModifierQualifier first"><span class="SHKeyword">const</span> boost::</td><td class="PType">optional&lt;T&gt;&nbsp;</td><td class="PNamePrefix">&amp;</td><td class="PName last">opt,</td></tr><tr><td class="PModifierQualifier first"><span class="SHKeyword">const</span> std::</td><td class="PType"><span class="SHKeyword">string</span>&nbsp;</td><td class="PNamePrefix">&amp;</td><td class="PName last">valueName</td></tr></table></td><td class="PAfterParameters">) <span class="SHKeyword">const</span></td></tr></table></div>
- <div class="CBody"><p>Throws an exception if an optional value isn't set.</p><div class="CHeading">Parameters</div><table class="CDefinitionList"><tr><td class="CDLEntry">opt<div class="CDLParameterType"><span class="SHKeyword">const</span> boost::optional&lt;T&gt;&amp;</div></td><td class="CDLDefinition"><p>The boost::optional value to check if it is set.</p></td></tr><tr><td class="CDLEntry">valueName<div class="CDLParameterType"><span class="SHKeyword">const</span> std::<span class="SHKeyword">string</span>&amp;</div></td><td class="CDLDefinition"><p>The name of the value being checked. This will be included in the exception description if not set.</p></td></tr></table><div class="CHeading">Exceptions</div><table class="CDefinitionList"><tr><td class="CDLEntry"><a href="../../index.html#CClass:Error_NoData" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,7707);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >Error_NoData</a></td><td class="CDLDefinition"><p>The requested value has not been set.</p></td></tr></table></div>
-</div>
-
-<a name="isSet"></a><a name="Topic1605"></a><div class="CTopic TFunction LC">
- <div class="CTitle">isSet</div>
- <div id="NDPrototype1605" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">template</span>&lt;typename T&gt; <span class="SHKeyword">bool</span> isSet(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PModifierQualifier first"><span class="SHKeyword">const</span> boost::</td><td class="PType">optional&lt;T&gt;&nbsp;</td><td class="PNamePrefix">&amp;</td><td class="PName last">opt</td></tr></table></td><td class="PAfterParameters">) <span class="SHKeyword">const</span></td></tr></table></div>
- <div class="CBody"><p>Checks whether the optional value is set.</p><div class="CHeading">Parameters</div><table class="CDefinitionList"><tr><td class="CDLEntry">opt<div class="CDLParameterType"><span class="SHKeyword">const</span> boost::optional&lt;T&gt;&amp;</div></td><td class="CDLDefinition"><p>The boost::optional value to check if it is set.</p></td></tr></table><div class="CHeading">Returns</div><p>true if the value is set, false if it is not set.</p></div>
-</div>
-
-<a name="Variables(2)"></a><a name="Topic1606"></a><div class="CTopic TGroup LC">
+<a name="Variables"></a><a name="Topic1696"></a><div class="CTopic TGroup LC">
  <div class="CTitle">Variables</div>
 </div>
 
-<a name="m_systemState"></a><a name="Topic1607"></a><div class="CTopic TVariable LC">
+<a name="model"></a><a name="Topic1697"></a><div class="CTopic TVariable LC">
+ <div class="CTitle">model</div>
+ <div id="NDPrototype1697" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint16</span> modelNumber</div>
+</div>
+
+<a name="statusStructure"></a><a name="Topic1698"></a><div class="CTopic TVariable LC">
+ <div class="CTitle">statusStructure</div>
+ <div id="NDPrototype1698" class="NDPrototype NoParameterForm"><a href="../../index.html#CClass:DeviceStatusData:StatusSelector" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1690);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >StatusSelector</a> statusStructure</div>
+</div>
+
+<a name="systemTimerInMS"></a><a name="Topic1699"></a><div class="CTopic TVariable LC">
+ <div class="CTitle">systemTimerInMS</div>
+ <div id="NDPrototype1699" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint32</span> systemTimerInMS</div>
+</div>
+
+<a name="Functions(2)"></a><a name="Topic1700"></a><div class="CTopic TGroup LC">
+ <div class="CTitle">Functions</div>
+</div>
+
+<a name="systemState"></a><a name="Topic1701"></a><div class="CTopic TFunction LC">
+ <div class="CTitle">systemState</div>
+ <div id="NDPrototype1701" class="NDPrototype NoParameterForm"><a href="../../index.html#CClass:DeviceStatusData:SystemState" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1693);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >SystemState</a> systemState()</div>
+ <div class="CBody"><p>get or set m_systemState</p></div>
+</div>
+
+<a name="gnssPowerStateOn"></a><a name="Topic1702"></a><div class="CTopic TFunction LC">
+ <div class="CTitle">gnssPowerStateOn</div>
+ <div id="NDPrototype1702" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> gnssPowerStateOn() <span class="SHKeyword">const</span></div>
+ <div class="CBody"><p>get or set m_gnssPowerStateOn</p></div>
+</div>
+
+<a name="gnss1PpsPulseInfo"></a><a name="Topic1703"></a><div class="CTopic TFunction LC">
+ <div class="CTitle">gnss1PpsPulseInfo</div>
+ <div id="NDPrototype1703" class="NDPrototype NoParameterForm"><a href="../../index.html#CClass:PpsPulseInfo" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1654);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >PpsPulseInfo</a> gnss1PpsPulseInfo()</div>
+ <div class="CBody"><p>get or set m_gnss1PpsPulseInfo</p></div>
+</div>
+
+<a name="imuStreamInfo"></a><a name="Topic1704"></a><div class="CTopic TFunction LC">
+ <div class="CTitle">imuStreamInfo</div>
+ <div id="NDPrototype1704" class="NDPrototype NoParameterForm"><a href="../../index.html#CClass:StreamInfo" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1660);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >StreamInfo</a> imuStreamInfo()</div>
+ <div class="CBody"><p>get or set m_imuStreamInfo</p></div>
+</div>
+
+<a name="gnssStreamInfo"></a><a name="Topic1705"></a><div class="CTopic TFunction LC">
+ <div class="CTitle">gnssStreamInfo</div>
+ <div id="NDPrototype1705" class="NDPrototype NoParameterForm"><a href="../../index.html#CClass:StreamInfo" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1660);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >StreamInfo</a> gnssStreamInfo()</div>
+ <div class="CBody"><p>get or set m_gnssStreamInfo</p></div>
+</div>
+
+<a name="estimationFilterStreamInfo"></a><a name="Topic1706"></a><div class="CTopic TFunction LC">
+ <div class="CTitle">estimationFilterStreamInfo</div>
+ <div id="NDPrototype1706" class="NDPrototype NoParameterForm"><a href="../../index.html#CClass:StreamInfo" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1660);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >StreamInfo</a> estimationFilterStreamInfo()</div>
+ <div class="CBody"><p>get or set m_estimationFilterStreamInfo</p></div>
+</div>
+
+<a name="imuMessageInfo"></a><a name="Topic1707"></a><div class="CTopic TFunction LC">
+ <div class="CTitle">imuMessageInfo</div>
+ <div id="NDPrototype1707" class="NDPrototype NoParameterForm"><a href="../../index.html#CClass:DeviceMessageInfo" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1666);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >DeviceMessageInfo</a> imuMessageInfo()</div>
+ <div class="CBody"><p>get or set m_imuMessageInfo</p></div>
+</div>
+
+<a name="gnssMessageInfo"></a><a name="Topic1708"></a><div class="CTopic TFunction LC">
+ <div class="CTitle">gnssMessageInfo</div>
+ <div id="NDPrototype1708" class="NDPrototype NoParameterForm"><a href="../../index.html#CClass:DeviceMessageInfo" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1666);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >DeviceMessageInfo</a> gnssMessageInfo()</div>
+ <div class="CBody"><p>get or set m_gnssMessageInfo</p></div>
+</div>
+
+<a name="comPortInfo"></a><a name="Topic1709"></a><div class="CTopic TFunction LC">
+ <div class="CTitle">comPortInfo</div>
+ <div id="NDPrototype1709" class="NDPrototype NoParameterForm"><a href="../../index.html#CClass:PortInfo" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1673);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >PortInfo</a> comPortInfo()</div>
+ <div class="CBody"><p>get or set m_comPortInfo</p></div>
+</div>
+
+<a name="usbPortInfo"></a><a name="Topic1710"></a><div class="CTopic TFunction LC">
+ <div class="CTitle">usbPortInfo</div>
+ <div id="NDPrototype1710" class="NDPrototype NoParameterForm"><a href="../../index.html#CClass:PortInfo" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1673);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >PortInfo</a> usbPortInfo()</div>
+ <div class="CBody"><p>get or set m_usbPortInfo</p></div>
+</div>
+
+<a name="hasMagnetometer"></a><a name="Topic1711"></a><div class="CTopic TFunction LC">
+ <div class="CTitle">hasMagnetometer</div>
+ <div id="NDPrototype1711" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> hasMagnetometer() <span class="SHKeyword">const</span></div>
+ <div class="CBody"><p>get or set m_hasMagnetometer</p></div>
+</div>
+
+<a name="magnetometerInitializationFailed"></a><a name="Topic1712"></a><div class="CTopic TFunction LC">
+ <div class="CTitle">magnetometerInitializationFailed</div>
+ <div id="NDPrototype1712" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> magnetometerInitializationFailed() <span class="SHKeyword">const</span></div>
+ <div class="CBody"><p>get or set m_magnetometerInitializationFailed</p></div>
+</div>
+
+<a name="hasPressure"></a><a name="Topic1713"></a><div class="CTopic TFunction LC">
+ <div class="CTitle">hasPressure</div>
+ <div id="NDPrototype1713" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> hasPressure() <span class="SHKeyword">const</span></div>
+ <div class="CBody"><p>get or set m_hasPressure</p></div>
+</div>
+
+<a name="pressureInitializationFailed"></a><a name="Topic1714"></a><div class="CTopic TFunction LC">
+ <div class="CTitle">pressureInitializationFailed</div>
+ <div id="NDPrototype1714" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> pressureInitializationFailed() <span class="SHKeyword">const</span></div>
+ <div class="CBody"><p>get or set m_pressureInitializationFailed</p></div>
+</div>
+
+<a name="gnssReceiverInitializationFailed"></a><a name="Topic1715"></a><div class="CTopic TFunction LC">
+ <div class="CTitle">gnssReceiverInitializationFailed</div>
+ <div id="NDPrototype1715" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> gnssReceiverInitializationFailed() <span class="SHKeyword">const</span></div>
+ <div class="CBody"><p>get or set m_gnssReceiverInitializationFailed</p></div>
+</div>
+
+<a name="coldStartOnPowerOn"></a><a name="Topic1716"></a><div class="CTopic TFunction LC">
+ <div class="CTitle">coldStartOnPowerOn</div>
+ <div id="NDPrototype1716" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> coldStartOnPowerOn() <span class="SHKeyword">const</span></div>
+ <div class="CBody"><p>get or set m_coldStartOnPowerOn</p></div>
+</div>
+
+<a name="temperatureInfo"></a><a name="Topic1717"></a><div class="CTopic TFunction LC">
+ <div class="CTitle">temperatureInfo</div>
+ <div id="NDPrototype1717" class="NDPrototype NoParameterForm"><a href="../../index.html#CClass:TemperatureInfo" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1681);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >TemperatureInfo</a> temperatureInfo()</div>
+ <div class="CBody"><p>get or set m_temperatureInfo</p></div>
+</div>
+
+<a name="powerState"></a><a name="Topic1718"></a><div class="CTopic TFunction LC">
+ <div class="CTitle">powerState</div>
+ <div id="NDPrototype1718" class="NDPrototype NoParameterForm">InertialTypes::PowerState powerState() <span class="SHKeyword">const</span></div>
+ <div class="CBody"><p>get or set m_powerState</p></div>
+</div>
+
+<a name="gyroRange"></a><a name="Topic1719"></a><div class="CTopic TFunction LC">
+ <div class="CTitle">gyroRange</div>
+ <div id="NDPrototype1719" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint16</span> gyroRange() <span class="SHKeyword">const</span></div>
+ <div class="CBody"><p>get or set m_gyroRange</p></div>
+</div>
+
+<a name="accelRange"></a><a name="Topic1720"></a><div class="CTopic TFunction LC">
+ <div class="CTitle">accelRange</div>
+ <div id="NDPrototype1720" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint16</span> accelRange() <span class="SHKeyword">const</span></div>
+ <div class="CBody"><p>get or set m_accelRange</p></div>
+</div>
+
+<a name="checkValue"></a><a name="Topic1721"></a><div class="CTopic TFunction LC">
+ <div class="CTitle">checkValue</div>
+ <div id="NDPrototype1721" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">template</span>&lt;typename T&gt; <span class="SHKeyword">void</span> checkValue(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PModifierQualifier first"><span class="SHKeyword">const</span> boost::</td><td class="PType">optional&lt;T&gt;&nbsp;</td><td class="PNamePrefix">&amp;</td><td class="PName last">opt,</td></tr><tr><td class="PModifierQualifier first"><span class="SHKeyword">const</span> std::</td><td class="PType"><span class="SHKeyword">string</span>&nbsp;</td><td class="PNamePrefix">&amp;</td><td class="PName last">valueName</td></tr></table></td><td class="PAfterParameters">) <span class="SHKeyword">const</span></td></tr></table></div>
+ <div class="CBody"><p>Throws an exception if an optional value isn't set.</p><div class="CHeading">Parameters</div><table class="CDefinitionList"><tr><td class="CDLEntry">opt<div class="CDLParameterType"><span class="SHKeyword">const</span> boost::optional&lt;T&gt;&amp;</div></td><td class="CDLDefinition"><p>The boost::optional value to check if it is set.</p></td></tr><tr><td class="CDLEntry">valueName<div class="CDLParameterType"><span class="SHKeyword">const</span> std::<span class="SHKeyword">string</span>&amp;</div></td><td class="CDLDefinition"><p>The name of the value being checked. This will be included in the exception description if not set.</p></td></tr></table><div class="CHeading">Exceptions</div><table class="CDefinitionList"><tr><td class="CDLEntry"><a href="../../index.html#CClass:Error_NoData" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,7752);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >Error_NoData</a></td><td class="CDLDefinition"><p>The requested value has not been set.</p></td></tr></table></div>
+</div>
+
+<a name="isSet"></a><a name="Topic1722"></a><div class="CTopic TFunction LC">
+ <div class="CTitle">isSet</div>
+ <div id="NDPrototype1722" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">template</span>&lt;typename T&gt; <span class="SHKeyword">bool</span> isSet(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PModifierQualifier first"><span class="SHKeyword">const</span> boost::</td><td class="PType">optional&lt;T&gt;&nbsp;</td><td class="PNamePrefix">&amp;</td><td class="PName last">opt</td></tr></table></td><td class="PAfterParameters">) <span class="SHKeyword">const</span></td></tr></table></div>
+ <div class="CBody"><p>Checks whether the optional value is set.</p><div class="CHeading">Parameters</div><table class="CDefinitionList"><tr><td class="CDLEntry">opt<div class="CDLParameterType"><span class="SHKeyword">const</span> boost::optional&lt;T&gt;&amp;</div></td><td class="CDLDefinition"><p>The boost::optional value to check if it is set.</p></td></tr></table><div class="CHeading">Returns</div><p>true if the value is set, false if it is not set.</p></div>
+</div>
+
+<a name="Variables(2)"></a><a name="Topic1723"></a><div class="CTopic TGroup LC">
+ <div class="CTitle">Variables</div>
+</div>
+
+<a name="m_systemState"></a><a name="Topic1724"></a><div class="CTopic TVariable LC">
  <div class="CTitle">m_systemState</div>
- <div id="NDPrototype1607" class="NDPrototype NoParameterForm">boost::optional&lt;<a href="../../index.html#CClass:DeviceStatusData:SystemState" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1578);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >SystemState</a>&gt; m_systemState</div>
+ <div id="NDPrototype1724" class="NDPrototype NoParameterForm">boost::optional&lt;<a href="../../index.html#CClass:DeviceStatusData:SystemState" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1693);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >SystemState</a>&gt; m_systemState</div>
 </div>
 
-<a name="m_gnssPowerStateOn"></a><a name="Topic1608"></a><div class="CTopic TVariable LC">
+<a name="m_gnssPowerStateOn"></a><a name="Topic1725"></a><div class="CTopic TVariable LC">
  <div class="CTitle">m_gnssPowerStateOn</div>
- <div id="NDPrototype1608" class="NDPrototype NoParameterForm">boost::optional&lt;<span class="SHKeyword">bool</span>&gt; m_gnssPowerStateOn</div>
+ <div id="NDPrototype1725" class="NDPrototype NoParameterForm">boost::optional&lt;<span class="SHKeyword">bool</span>&gt; m_gnssPowerStateOn</div>
 </div>
 
-<a name="m_gnss1PpsPulseInfo"></a><a name="Topic1609"></a><div class="CTopic TVariable LC">
+<a name="m_gnss1PpsPulseInfo"></a><a name="Topic1726"></a><div class="CTopic TVariable LC">
  <div class="CTitle">m_gnss1PpsPulseInfo</div>
- <div id="NDPrototype1609" class="NDPrototype NoParameterForm">boost::optional&lt;<a href="../../index.html#CClass:PpsPulseInfo" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1549);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >PpsPulseInfo</a>&gt; m_gnss1PpsPulseInfo</div>
+ <div id="NDPrototype1726" class="NDPrototype NoParameterForm">boost::optional&lt;<a href="../../index.html#CClass:PpsPulseInfo" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1654);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >PpsPulseInfo</a>&gt; m_gnss1PpsPulseInfo</div>
 </div>
 
-<a name="m_imuStreamInfo"></a><a name="Topic1610"></a><div class="CTopic TVariable LC">
+<a name="m_imuStreamInfo"></a><a name="Topic1727"></a><div class="CTopic TVariable LC">
  <div class="CTitle">m_imuStreamInfo</div>
- <div id="NDPrototype1610" class="NDPrototype NoParameterForm">boost::optional&lt;<a href="../../index.html#CClass:StreamInfo" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1553);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >StreamInfo</a>&gt; m_imuStreamInfo</div>
+ <div id="NDPrototype1727" class="NDPrototype NoParameterForm">boost::optional&lt;<a href="../../index.html#CClass:StreamInfo" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1660);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >StreamInfo</a>&gt; m_imuStreamInfo</div>
 </div>
 
-<a name="m_gnssStreamInfo"></a><a name="Topic1611"></a><div class="CTopic TVariable LC">
+<a name="m_gnssStreamInfo"></a><a name="Topic1728"></a><div class="CTopic TVariable LC">
  <div class="CTitle">m_gnssStreamInfo</div>
- <div id="NDPrototype1611" class="NDPrototype NoParameterForm">boost::optional&lt;<a href="../../index.html#CClass:StreamInfo" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1553);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >StreamInfo</a>&gt; m_gnssStreamInfo</div>
+ <div id="NDPrototype1728" class="NDPrototype NoParameterForm">boost::optional&lt;<a href="../../index.html#CClass:StreamInfo" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1660);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >StreamInfo</a>&gt; m_gnssStreamInfo</div>
 </div>
 
-<a name="m_estimationFilterStreamInfo"></a><a name="Topic1612"></a><div class="CTopic TVariable LC">
+<a name="m_estimationFilterStreamInfo"></a><a name="Topic1729"></a><div class="CTopic TVariable LC">
  <div class="CTitle">m_estimationFilterStreamInfo</div>
- <div id="NDPrototype1612" class="NDPrototype NoParameterForm">boost::optional&lt;<a href="../../index.html#CClass:StreamInfo" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1553);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >StreamInfo</a>&gt; m_estimationFilterStreamInfo</div>
+ <div id="NDPrototype1729" class="NDPrototype NoParameterForm">boost::optional&lt;<a href="../../index.html#CClass:StreamInfo" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1660);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >StreamInfo</a>&gt; m_estimationFilterStreamInfo</div>
 </div>
 
-<a name="m_imuMessageInfo"></a><a name="Topic1613"></a><div class="CTopic TVariable LC">
+<a name="m_imuMessageInfo"></a><a name="Topic1730"></a><div class="CTopic TVariable LC">
  <div class="CTitle">m_imuMessageInfo</div>
- <div id="NDPrototype1613" class="NDPrototype NoParameterForm">boost::optional&lt;<a href="../../index.html#CClass:DeviceMessageInfo" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1557);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >DeviceMessageInfo</a>&gt; m_imuMessageInfo</div>
+ <div id="NDPrototype1730" class="NDPrototype NoParameterForm">boost::optional&lt;<a href="../../index.html#CClass:DeviceMessageInfo" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1666);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >DeviceMessageInfo</a>&gt; m_imuMessageInfo</div>
 </div>
 
-<a name="m_gnssMessageInfo"></a><a name="Topic1614"></a><div class="CTopic TVariable LC">
+<a name="m_gnssMessageInfo"></a><a name="Topic1731"></a><div class="CTopic TVariable LC">
  <div class="CTitle">m_gnssMessageInfo</div>
- <div id="NDPrototype1614" class="NDPrototype NoParameterForm">boost::optional&lt;<a href="../../index.html#CClass:DeviceMessageInfo" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1557);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >DeviceMessageInfo</a>&gt; m_gnssMessageInfo</div>
+ <div id="NDPrototype1731" class="NDPrototype NoParameterForm">boost::optional&lt;<a href="../../index.html#CClass:DeviceMessageInfo" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1666);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >DeviceMessageInfo</a>&gt; m_gnssMessageInfo</div>
 </div>
 
-<a name="m_comPortInfo"></a><a name="Topic1615"></a><div class="CTopic TVariable LC">
+<a name="m_comPortInfo"></a><a name="Topic1732"></a><div class="CTopic TVariable LC">
  <div class="CTitle">m_comPortInfo</div>
- <div id="NDPrototype1615" class="NDPrototype NoParameterForm">boost::optional&lt;<a href="../../index.html#CClass:PortInfo" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1562);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >PortInfo</a>&gt; m_comPortInfo</div>
+ <div id="NDPrototype1732" class="NDPrototype NoParameterForm">boost::optional&lt;<a href="../../index.html#CClass:PortInfo" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1673);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >PortInfo</a>&gt; m_comPortInfo</div>
 </div>
 
-<a name="m_usbPortInfo"></a><a name="Topic1616"></a><div class="CTopic TVariable LC">
+<a name="m_usbPortInfo"></a><a name="Topic1733"></a><div class="CTopic TVariable LC">
  <div class="CTitle">m_usbPortInfo</div>
- <div id="NDPrototype1616" class="NDPrototype NoParameterForm">boost::optional&lt;<a href="../../index.html#CClass:PortInfo" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1562);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >PortInfo</a>&gt; m_usbPortInfo</div>
+ <div id="NDPrototype1733" class="NDPrototype NoParameterForm">boost::optional&lt;<a href="../../index.html#CClass:PortInfo" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1673);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >PortInfo</a>&gt; m_usbPortInfo</div>
 </div>
 
-<a name="m_hasMagnetometer"></a><a name="Topic1617"></a><div class="CTopic TVariable LC">
+<a name="m_hasMagnetometer"></a><a name="Topic1734"></a><div class="CTopic TVariable LC">
  <div class="CTitle">m_hasMagnetometer</div>
- <div id="NDPrototype1617" class="NDPrototype NoParameterForm">boost::optional&lt;<span class="SHKeyword">bool</span>&gt; m_hasMagnetometer</div>
+ <div id="NDPrototype1734" class="NDPrototype NoParameterForm">boost::optional&lt;<span class="SHKeyword">bool</span>&gt; m_hasMagnetometer</div>
 </div>
 
-<a name="m_magnetometerInitializationFailed"></a><a name="Topic1618"></a><div class="CTopic TVariable LC">
+<a name="m_magnetometerInitializationFailed"></a><a name="Topic1735"></a><div class="CTopic TVariable LC">
  <div class="CTitle">m_magnetometerInitializationFailed</div>
- <div id="NDPrototype1618" class="NDPrototype NoParameterForm">boost::optional&lt;<span class="SHKeyword">bool</span>&gt; m_magnetometerInitializationFailed</div>
+ <div id="NDPrototype1735" class="NDPrototype NoParameterForm">boost::optional&lt;<span class="SHKeyword">bool</span>&gt; m_magnetometerInitializationFailed</div>
 </div>
 
-<a name="m_hasPressure"></a><a name="Topic1619"></a><div class="CTopic TVariable LC">
+<a name="m_hasPressure"></a><a name="Topic1736"></a><div class="CTopic TVariable LC">
  <div class="CTitle">m_hasPressure</div>
- <div id="NDPrototype1619" class="NDPrototype NoParameterForm">boost::optional&lt;<span class="SHKeyword">bool</span>&gt; m_hasPressure</div>
+ <div id="NDPrototype1736" class="NDPrototype NoParameterForm">boost::optional&lt;<span class="SHKeyword">bool</span>&gt; m_hasPressure</div>
 </div>
 
-<a name="m_pressureInitializationFailed"></a><a name="Topic1620"></a><div class="CTopic TVariable LC">
+<a name="m_pressureInitializationFailed"></a><a name="Topic1737"></a><div class="CTopic TVariable LC">
  <div class="CTitle">m_pressureInitializationFailed</div>
- <div id="NDPrototype1620" class="NDPrototype NoParameterForm">boost::optional&lt;<span class="SHKeyword">bool</span>&gt; m_pressureInitializationFailed</div>
+ <div id="NDPrototype1737" class="NDPrototype NoParameterForm">boost::optional&lt;<span class="SHKeyword">bool</span>&gt; m_pressureInitializationFailed</div>
 </div>
 
-<a name="m_gnssReceiverInitializationFailed"></a><a name="Topic1621"></a><div class="CTopic TVariable LC">
+<a name="m_gnssReceiverInitializationFailed"></a><a name="Topic1738"></a><div class="CTopic TVariable LC">
  <div class="CTitle">m_gnssReceiverInitializationFailed</div>
- <div id="NDPrototype1621" class="NDPrototype NoParameterForm">boost::optional&lt;<span class="SHKeyword">bool</span>&gt; m_gnssReceiverInitializationFailed</div>
+ <div id="NDPrototype1738" class="NDPrototype NoParameterForm">boost::optional&lt;<span class="SHKeyword">bool</span>&gt; m_gnssReceiverInitializationFailed</div>
 </div>
 
-<a name="m_coldStartOnPowerOn"></a><a name="Topic1622"></a><div class="CTopic TVariable LC">
+<a name="m_coldStartOnPowerOn"></a><a name="Topic1739"></a><div class="CTopic TVariable LC">
  <div class="CTitle">m_coldStartOnPowerOn</div>
- <div id="NDPrototype1622" class="NDPrototype NoParameterForm">boost::optional&lt;<span class="SHKeyword">bool</span>&gt; m_coldStartOnPowerOn</div>
+ <div id="NDPrototype1739" class="NDPrototype NoParameterForm">boost::optional&lt;<span class="SHKeyword">bool</span>&gt; m_coldStartOnPowerOn</div>
 </div>
 
-<a name="m_temperatureInfo"></a><a name="Topic1623"></a><div class="CTopic TVariable LC">
+<a name="m_temperatureInfo"></a><a name="Topic1740"></a><div class="CTopic TVariable LC">
  <div class="CTitle">m_temperatureInfo</div>
- <div id="NDPrototype1623" class="NDPrototype NoParameterForm">boost::optional&lt;<a href="../../index.html#CClass:TemperatureInfo" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1568);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >TemperatureInfo</a>&gt; m_temperatureInfo</div>
+ <div id="NDPrototype1740" class="NDPrototype NoParameterForm">boost::optional&lt;<a href="../../index.html#CClass:TemperatureInfo" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1681);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >TemperatureInfo</a>&gt; m_temperatureInfo</div>
 </div>
 
-<a name="m_powerState"></a><a name="Topic1624"></a><div class="CTopic TVariable LC">
+<a name="m_powerState"></a><a name="Topic1741"></a><div class="CTopic TVariable LC">
  <div class="CTitle">m_powerState</div>
- <div id="NDPrototype1624" class="NDPrototype NoParameterForm">boost::optional&lt;InertialTypes::PowerState&gt; m_powerState</div>
+ <div id="NDPrototype1741" class="NDPrototype NoParameterForm">boost::optional&lt;InertialTypes::PowerState&gt; m_powerState</div>
 </div>
 
-<a name="m_gyroRange"></a><a name="Topic1625"></a><div class="CTopic TVariable LC">
+<a name="m_gyroRange"></a><a name="Topic1742"></a><div class="CTopic TVariable LC">
  <div class="CTitle">m_gyroRange</div>
- <div id="NDPrototype1625" class="NDPrototype NoParameterForm">boost::optional&lt;<span class="SHKeyword">uint16</span>&gt; m_gyroRange</div>
+ <div id="NDPrototype1742" class="NDPrototype NoParameterForm">boost::optional&lt;<span class="SHKeyword">uint16</span>&gt; m_gyroRange</div>
  <div class="CBody"><p>Gyroscope range in degrees/second</p></div>
 </div>
 
-<a name="m_accelRange"></a><a name="Topic1626"></a><div class="CTopic TVariable LC last">
+<a name="m_accelRange"></a><a name="Topic1743"></a><div class="CTopic TVariable LC last">
  <div class="CTitle">m_accelRange</div>
- <div id="NDPrototype1626" class="NDPrototype NoParameterForm">boost::optional&lt;<span class="SHKeyword">uint16</span>&gt; m_accelRange</div>
+ <div id="NDPrototype1743" class="NDPrototype NoParameterForm">boost::optional&lt;<span class="SHKeyword">uint16</span>&gt; m_accelRange</div>
  <div class="CBody"><p>Accelerometer range in gauss</p></div>
 </div>
 

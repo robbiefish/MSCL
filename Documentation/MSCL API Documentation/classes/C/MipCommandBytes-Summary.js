@@ -1,1 +1,1 @@
-NDFramePage.OnPageTitleLoaded("CClass:MipCommandBytes","MipCommandBytes");NDSummary.OnSummaryLoaded("CClass:MipCommandBytes",[["C/C++","C"]],[["Structs","Struct"],["Types","Type"]],[[612,0,0,"MipCommandBytes"],[613,0,1,"MipCommandSet","MipCommandSet"]]);
+NDFramePage.OnPageTitleLoaded("CClass:MipCommandBytes","MipCommandBytes");NDSummary.OnSummaryLoaded("CClass:MipCommandBytes",[["C/C++","C"]],[["Structs","Struct"],["Types","Type"]],[[640,0,0,"MipCommandBytes"],[641,0,1,"MipCommandSet","MipCommandSet"]]);

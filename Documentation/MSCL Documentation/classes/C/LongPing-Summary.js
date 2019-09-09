@@ -1,1 +1,1 @@
-NDFramePage.OnPageTitleLoaded("CClass:LongPing","LongPing");NDSummary.OnSummaryLoaded("CClass:LongPing",[["C/C++","C"]],[["Classes","Class"],["Functions","Function"],["Groups","Group"]],[[2913,0,0,"LongPing"],[2914,0,2,"Functions","Functions"],[2915,0,1,"buildCommand","buildCommand"]]);
+NDFramePage.OnPageTitleLoaded("CClass:LongPing","LongPing");NDSummary.OnSummaryLoaded("CClass:LongPing",[["C/C++","C"]],[["Classes","Class"],["Functions","Function"],["Groups","Group"]],[[2946,0,0,"LongPing"],[2947,0,2,"Functions","Functions"],[2948,0,1,"buildCommand","buildCommand"]]);
