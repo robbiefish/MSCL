@@ -1,0 +1,1 @@
+NDSearch.OnPrefixDataLoaded("bei",["Constant"],[["BEIDOU",,[[,,,,0,"File:MicroStrain/Inertial/ExposedInertialTypes.h:BEIDOU"]]]]);

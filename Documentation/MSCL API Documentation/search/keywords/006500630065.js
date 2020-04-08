@@ -1,0 +1,1 @@
+NDSearch.OnPrefixDataLoaded("ece",["Enumeration"],[["ECEF",,[["Matrix_3x3",,,,0,"File:MicroStrain/Inertial/ExposedInertialTypes.h:Matrix_3x3.ECEF","CClass:Matrix_3x3:ECEF"]]]]);

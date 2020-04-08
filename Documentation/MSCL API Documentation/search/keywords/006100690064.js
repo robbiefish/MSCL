@@ -1,0 +1,1 @@
+NDSearch.OnPrefixDataLoaded("aid",["Function","Enumeration"],[["aidingMeasurementEnabled",,[["InertialNode",,,,0,"File:MicroStrain/Inertial/InertialNode.h:InertialNode.aidingMeasurementEnabled","CClass:InertialNode:aidingMeasurementEnabled"]]],["AidingMeasurementSource",,[[,,,,1,"File:MicroStrain/Inertial/ExposedInertialTypes.h:AidingMeasurementSource"]]]]);

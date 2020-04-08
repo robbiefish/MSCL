@@ -1,0 +1,1 @@
+NDSearch.OnPrefixDataLoaded("asm",["Function"],[["asMap",,[["DeviceStatusData",,,,0,"File:MicroStrain/Inertial/ExposedInertialTypes.h:DeviceStatusData.asMap","CClass:DeviceStatusData:asMap"]]]]);
