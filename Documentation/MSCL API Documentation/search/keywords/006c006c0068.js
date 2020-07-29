@@ -1,1 +1,1 @@
-NDSearch.OnPrefixDataLoaded("llh",["Enumeration"],[["LLH_NED",,[["Matrix_3x3",,,,0,"File:MicroStrain/Inertial/ExposedInertialTypes.h:Matrix_3x3.LLH_NED","CClass:Matrix_3x3:LLH_NED"]]]]);
+NDSearch.OnPrefixDataLoaded("llh",["Enumeration"],[["LLH_NED",,[["Quaternion",,,,0,"File:MicroStrain/Inertial/ExposedInertialTypes.h:Quaternion.LLH_NED","CClass:Quaternion:LLH_NED"]]]]);

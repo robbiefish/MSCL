@@ -1,0 +1,1 @@
+NDFramePage.OnPageTitleLoaded("CClass:RTKDeviceStatusFlags","RTKDeviceStatusFlags");NDSummary.OnSummaryLoaded("CClass:RTKDeviceStatusFlags",[["C/C++","C"]],[["Structs","Struct"],["Variables","Variable"]],[[679,0,0,"RTKDeviceStatusFlags"],[680,0,1,"modemEnabled","modemEnabled"],[681,0,1,"modemConnected","modemConnected"],[682,0,1,"clientConnected","clientConnected"]]);

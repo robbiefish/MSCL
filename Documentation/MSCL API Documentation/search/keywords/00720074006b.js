@@ -1,0 +1,1 @@
+NDSearch.OnPrefixDataLoaded("rtk",["Struct","Class"],[["RTKDeviceStatusFlags",,[[,,,,0,"File:MicroStrain/Inertial/ExposedInertialTypes.h:RTKDeviceStatusFlags","CClass:RTKDeviceStatusFlags"]]],["RTKModels",,[[,,,,1,"File:MicroStrain/RTK/RTKModels.h:RTKModels","CClass:RTKModels"]]],["RTKNode",,[[,,,,1,"File:MicroStrain/RTK/RTKNode.h:RTKNode","CClass:RTKNode"]]]]);

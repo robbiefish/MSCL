@@ -8,39 +8,39 @@
 
 <body onload="NDLoader.OnLoad('Content');" class="NDPage NDContentPage">
 
-<a name="Topic653"></a><div class="CTopic TStruct LC first">
+<a name="Topic586"></a><div class="CTopic TStruct LC first">
  <div class="CTitle">HeadingUpdateOptions</div>
  <div class="CBody"><p>Contains the possible sources of aiding heading updates to the Kalman filter.&nbsp; Some, all, or none of the options can be set as heading aids.</p></div>
 </div>
 
-<a name="useInternalMagnetometer"></a><a name="Topic654"></a><div class="CTopic TVariable LC">
+<a name="useInternalMagnetometer"></a><a name="Topic587"></a><div class="CTopic TVariable LC">
  <div class="CTitle">useInternalMagnetometer</div>
- <div id="NDPrototype654" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> useInternalMagnetometer</div>
+ <div id="NDPrototype587" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> useInternalMagnetometer</div>
 </div>
 
-<a name="useInternalGNSSVelocityVector"></a><a name="Topic655"></a><div class="CTopic TVariable LC">
+<a name="useInternalGNSSVelocityVector"></a><a name="Topic588"></a><div class="CTopic TVariable LC">
  <div class="CTitle">useInternalGNSSVelocityVector</div>
- <div id="NDPrototype655" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> useInternalGNSSVelocityVector</div>
+ <div id="NDPrototype588" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> useInternalGNSSVelocityVector</div>
 </div>
 
-<a name="useExternalHeadingMessages"></a><a name="Topic656"></a><div class="CTopic TVariable LC">
+<a name="useExternalHeadingMessages"></a><a name="Topic589"></a><div class="CTopic TVariable LC">
  <div class="CTitle">useExternalHeadingMessages</div>
- <div id="NDPrototype656" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> useExternalHeadingMessages</div>
+ <div id="NDPrototype589" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> useExternalHeadingMessages</div>
 </div>
 
-<a name="HeadingUpdateOptionsList"></a><a name="Topic657"></a><div class="CTopic TType LC">
+<a name="HeadingUpdateOptionsList"></a><a name="Topic590"></a><div class="CTopic TType LC">
  <div class="CTitle">HeadingUpdateOptionsList</div>
- <div class="CBody"><p>A vector of <a href="../../index.html#CClass:HeadingUpdateOptions" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,653);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >HeadingUpdateOptions</a> objects</p></div>
+ <div class="CBody"><p>A vector of <a href="../../index.html#CClass:HeadingUpdateOptions" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,586);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >HeadingUpdateOptions</a> objects</p></div>
 </div>
 
-<a name="FilterInitialValuesSource"></a><a name="Topic658"></a><div class="CTopic TEnumeration LC">
+<a name="FilterInitialValuesSource"></a><a name="Topic591"></a><div class="CTopic TEnumeration LC">
  <div class="CTitle">FilterInitialValuesSource</div>
- <div class="CBody"><p>Options defining which initial filter values are user-specified or automatically determined on initialization.</p><table class="CDefinitionList"><tr><td class="CDLEntry"><a name="Automatic"></a><a name="Topic659"></a>Automatic</td><td class="CDLDefinition"><p>0x00&nbsp; - Automatic position, velocity, and attitude</p></td></tr><tr><td class="CDLEntry"><a name="UserSpecified_Heading"></a><a name="Topic660"></a>UserSpecified_Heading</td><td class="CDLDefinition"><p>0x01&nbsp; - Automatic position and velocity, automatic pitch and roll, and user-specified heading</p></td></tr><tr><td class="CDLEntry"><a name="UserSpecified_Attitude"></a><a name="Topic661"></a>UserSpecified_Attitude</td><td class="CDLDefinition"><p>0x02&nbsp; - Automatic position and velocity, fully user-specified attitude</p></td></tr><tr><td class="CDLEntry"><a name="UserSpecified_All"></a><a name="Topic662"></a>UserSpecified_All</td><td class="CDLDefinition"><p>0x03&nbsp; - User-specified position, velocity, and attitude</p></td></tr></table></div>
+ <div class="CBody"><p>Options defining which initial filter values are user-specified or automatically determined on initialization.</p><table class="CDefinitionList"><tr><td class="CDLEntry"><a name="Automatic"></a><a name="Topic592"></a>Automatic</td><td class="CDLDefinition"><p>0x00&nbsp; - Automatic position, velocity, and attitude</p></td></tr><tr><td class="CDLEntry"><a name="UserSpecified_Heading"></a><a name="Topic593"></a>UserSpecified_Heading</td><td class="CDLDefinition"><p>0x01&nbsp; - Automatic position and velocity, automatic pitch and roll, and user-specified heading</p></td></tr><tr><td class="CDLEntry"><a name="UserSpecified_Attitude"></a><a name="Topic594"></a>UserSpecified_Attitude</td><td class="CDLDefinition"><p>0x02&nbsp; - Automatic position and velocity, fully user-specified attitude</p></td></tr><tr><td class="CDLEntry"><a name="UserSpecified_All"></a><a name="Topic595"></a>UserSpecified_All</td><td class="CDLDefinition"><p>0x03&nbsp; - User-specified position, velocity, and attitude</p></td></tr></table></div>
 </div>
 
-<a name="HeadingAlignmentMethod"></a><a name="Topic663"></a><div class="CTopic TEnumeration LC last">
- <div class="CTitle">HeadingAlignmentMethod</div>
- <div class="CBody"><p>Method options for automatically determining initial filter heading</p><table class="CDefinitionList"><tr><td class="CDLEntry"><a name="GNSS_Kinematic"></a><a name="Topic664"></a>GNSS_Kinematic</td><td class="CDLDefinition"><p>0x00&nbsp; - GNSS kinematic alignment (GNSS velocity determines initial heading)</p></td></tr><tr><td class="CDLEntry"><a name="GNSS_DualAntenna"></a><a name="Topic665"></a>GNSS_DualAntenna</td><td class="CDLDefinition"><p>0x01&nbsp; - Dual-antenna GNSS alignment</p></td></tr><tr><td class="CDLEntry"><a name="Magnetometer"></a><a name="Topic666"></a>Magnetometer</td><td class="CDLDefinition"><p>0x02&nbsp; - Magnetometer heading alignment</p></td></tr></table></div>
+<a name="HeadingAlignmentOption"></a><a name="Topic596"></a><div class="CTopic TEnumeration LC last">
+ <div class="CTitle">HeadingAlignmentOption</div>
+ <div class="CBody"><p>Method options for automatically determining initial filter heading</p><table class="CDefinitionList"><tr><td class="CDLEntry"><a name="GNSS_DualAntenna"></a><a name="Topic597"></a>GNSS_DualAntenna</td><td class="CDLDefinition"><p>0x01&nbsp; - Dual-antenna GNSS alignment</p></td></tr><tr><td class="CDLEntry"><a name="GNSS_Kinematic"></a><a name="Topic598"></a>GNSS_Kinematic</td><td class="CDLDefinition"><p>0x02&nbsp; - GNSS kinematic alignment (GNSS velocity determines initial heading)</p></td></tr><tr><td class="CDLEntry"><a name="Magnetometer"></a><a name="Topic599"></a>Magnetometer</td><td class="CDLDefinition"><p>0x04&nbsp; - Magnetometer heading alignment</p></td></tr></table></div>
 </div>
 
 </body></html>
