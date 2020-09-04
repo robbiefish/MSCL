@@ -1,1 +1,1 @@
-NDContentPage.OnToolTipsLoaded({586:"<div class=\"NDToolTip TStruct LC\"><div class=\"TTSummary\">Contains the possible sources of aiding heading updates to the Kalman filter.&nbsp; Some, all, or none of the options can be set as heading aids.</div></div>"});
+NDContentPage.OnToolTipsLoaded({571:"<div class=\"NDToolTip TStruct LC\"><div class=\"TTSummary\">Contains the possible sources of aiding heading updates to the Kalman filter.&nbsp; Some, all, or none of the options can be set as heading aids.</div></div>"});

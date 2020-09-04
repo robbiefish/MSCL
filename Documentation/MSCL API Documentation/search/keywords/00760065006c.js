@@ -1,1 +1,0 @@
-NDSearch.OnPrefixDataLoaded("vel",["Variable"],[["velocity,",,[["KinematicConstraints","acceleration, velocity, angularRate",,"acceleration,velocity,angularrate",0,"File:MicroStrain/Inertial/ExposedInertialTypes.h:KinematicConstraints.acceleration,velocity,angularRate","CClass:KinematicConstraints:acceleration,velocity,angularRate"]]]]);

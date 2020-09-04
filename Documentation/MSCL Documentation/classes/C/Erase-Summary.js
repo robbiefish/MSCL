@@ -1,1 +1,1 @@
-NDFramePage.OnPageTitleLoaded("CClass:Erase","Erase");NDSummary.OnSummaryLoaded("CClass:Erase",[["C/C++","C"]],[["Classes","Class"],["Functions","Function"],["Groups","Group"]],[[3553,0,0,"Erase"],[3554,0,2,"Functions","Functions"],[3555,0,1,"buildCommand","buildCommand"]]);
+NDFramePage.OnPageTitleLoaded("CClass:Erase","Erase");NDSummary.OnSummaryLoaded("CClass:Erase",[["C/C++","C"]],[["Classes","Class"],["Functions","Function"],["Groups","Group"]],[[3580,0,0,"Erase"],[3581,0,2,"Functions","Functions"],[3582,0,1,"buildCommand","buildCommand"]]);

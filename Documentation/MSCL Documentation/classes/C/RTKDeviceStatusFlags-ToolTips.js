@@ -1,1 +1,1 @@
-NDContentPage.OnToolTipsLoaded({});
+NDContentPage.OnToolTipsLoaded({2080:"<div class=\"NDToolTip TEnumeration LC\"><div class=\"TTSummary\">Possible RTK reset reason values POWER_ON&nbsp; - 0x00000000 - Reset due to Power-on HARDWARE_RESET&nbsp; - 0x00010000 - Hardware reset SOFT_RESET&nbsp; - 0x00020000 - Soft reset WATCHDOG_RESET&nbsp; - 0x00030000 - Watchdog reset</div></div>"});

@@ -1,0 +1,1 @@
+NDFramePage.OnPageTitleLoaded("CClass:OdometerConfiguration","OdometerConfiguration");NDSummary.OnSummaryLoaded("CClass:OdometerConfiguration",[["C/C++","C"]],[["Enums","Enumeration"],["Structs","Struct"]],[[695,0,1,"OdometerConfiguration"],[696,0,0,"Mode","Mode"]]);
