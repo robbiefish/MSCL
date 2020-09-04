@@ -311,7 +311,9 @@ See the Collecting Data section for more info.
 </code></pre>
 <p>If a Node is in the Sleep state or Sampling state, it cannot be directly communicated with. In order to communicate with the Node, it must be put back into the Idle state. This can be done by using the <code>setToIdle()</code> function.</p>
 
-<p>The Set to Idle operation uses all of the BaseStation&#39;s bandwidth to attempt to stop/wake the Node. Thus, this can only be performed on a single Node at a time. Once started, the operation will continue until canceled by calling the <code>cancel()</code> function on the <code>SetToIdleStatus</code> object returned from the <code>setToIdle()</code> function.</p>
+<p>The Set to Idle operation uses all of the BaseStation&#39;s bandwidth to attempt to stop/wake the Node(s). Thus, only a single Set to Idle operation can be performed at a time. Once started, the operation will continue until canceled by calling the <code>cancel()</code> function on the <code>SetToIdleStatus</code> object returned from the <code>setToIdle()</code> function.</p>
+
+<p>There are two ways to set a node to idle - individual and broadcast. Issuing an individual Set to Idle command (<code>WirelessNode::setToIdle()</code>) will set only the specified node to idle, while broadcasting Set to Idle (<code>BaseStation::broadcastSetToIdle()</code>) will set all nodes on the BaseStation&#39;s frequency to idle.</p>
 <h2 id='configuring-a-node'>Configuring a Node</h2><h3 id='getting-current-config'>Getting Current Config</h3><pre class="highlight cpp tab-cpp"><code><span class="c1">//get the number of datalogging sessions stored on the node
 </span><span class="n">node</span><span class="p">.</span><span class="n">getNumDatalogSessions</span><span class="p">();</span>  
 
