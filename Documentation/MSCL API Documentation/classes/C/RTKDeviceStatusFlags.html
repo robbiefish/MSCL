@@ -8,53 +8,68 @@
 
 <body onload="NDLoader.OnLoad('Content');" class="NDPage NDContentPage">
 
-<a name="Topic659"></a><div class="CTopic TStruct LC first">
+<a name="Topic681"></a><div class="CTopic TStruct LC first">
  <div class="CTitle">RTKDeviceStatusFlags</div>
 </div>
 
-<a name="ValueMap"></a><a name="Topic660"></a><div class="CTopic TEnumeration LC">
- <div class="CTitle">ValueMap</div>
- <div class="CBody"><p>Map indicating the bits that define each value STATE&nbsp; - 0x000000FF - Device State:&nbsp; 00000000000000000000000011111111 STATUS_CODE&nbsp; - 0x0000FF00 - Status Code:&nbsp; 00000000000000001111111100000000 RESET_REASON&nbsp; - 0x00030000 - Reset Reason:&nbsp; 00000000000000110000000000000000 MODEM_POWERED&nbsp; - 0x00040000 - Modem Powered:&nbsp; 00000000000001000000000000000000 CELL_CONNECTED&nbsp; - 0x00080000 - Cell Connected:&nbsp; 00000000000010000000000000000000 SERVER_CONNECTED&nbsp; - 0x00100000 - Server Connected:&nbsp; 00000000000100000000000000000000 DATA_ENABLED&nbsp; - 0x00200000 - Data Enabled:&nbsp; 00000000001000000000000000000000</p></div>
-</div>
-
-<a name="ResetReason"></a><a name="Topic661"></a><div class="CTopic TEnumeration LC">
+<a name="ResetReason"></a><a name="Topic682"></a><div class="CTopic TEnumeration LC">
  <div class="CTitle">ResetReason</div>
  <div class="CBody"><p>Possible RTK reset reason values POWER_ON&nbsp; - 0x00000000 - Reset due to Power-on HARDWARE_RESET&nbsp; - 0x00010000 - Hardware reset SOFT_RESET&nbsp; - 0x00020000 - Soft reset WATCHDOG_RESET&nbsp; - 0x00030000 - Watchdog reset</p></div>
 </div>
 
-<a name="state"></a><a name="Topic662"></a><div class="CTopic TFunction LC">
+<a name="state"></a><a name="Topic683"></a><div class="CTopic TFunction LC">
  <div class="CTitle">state</div>
- <div id="NDPrototype662" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint8</span> state() <span class="SHKeyword">const</span></div>
+ <div id="NDPrototype683" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint8</span> state() <span class="SHKeyword">const</span></div>
 </div>
 
-<a name="statusCode"></a><a name="Topic663"></a><div class="CTopic TFunction LC">
+<a name="statusCode"></a><a name="Topic684"></a><div class="CTopic TFunction LC">
  <div class="CTitle">statusCode</div>
- <div id="NDPrototype663" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint8</span> statusCode() <span class="SHKeyword">const</span></div>
+ <div id="NDPrototype684" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint8</span> statusCode() <span class="SHKeyword">const</span></div>
 </div>
 
-<a name="resetReason"></a><a name="Topic664"></a><div class="CTopic TFunction LC">
+<a name="correctionsTimedOut"></a><a name="Topic685"></a><div class="CTopic TFunction LC">
+ <div class="CTitle">correctionsTimedOut</div>
+ <div id="NDPrototype685" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> correctionsTimedOut() <span class="SHKeyword">const</span></div>
+</div>
+
+<a name="serviceUnavailable"></a><a name="Topic686"></a><div class="CTopic TFunction LC">
+ <div class="CTitle">serviceUnavailable</div>
+ <div id="NDPrototype686" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> serviceUnavailable() <span class="SHKeyword">const</span></div>
+</div>
+
+<a name="resetReason"></a><a name="Topic687"></a><div class="CTopic TFunction LC">
  <div class="CTitle">resetReason</div>
- <div id="NDPrototype664" class="NDPrototype NoParameterForm"><a href="../../index.html#CClass:RTKDeviceStatusFlags:ResetReason" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,661);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >ResetReason</a> resetReason() <span class="SHKeyword">const</span></div>
+ <div id="NDPrototype687" class="NDPrototype NoParameterForm"><a href="../../index.html#CClass:RTKDeviceStatusFlags:ResetReason" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,682);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >ResetReason</a> resetReason() <span class="SHKeyword">const</span></div>
 </div>
 
-<a name="modemPowered"></a><a name="Topic665"></a><div class="CTopic TFunction LC">
+<a name="modemPowered"></a><a name="Topic688"></a><div class="CTopic TFunction LC">
  <div class="CTitle">modemPowered</div>
- <div id="NDPrototype665" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> modemPowered() <span class="SHKeyword">const</span></div>
+ <div id="NDPrototype688" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> modemPowered() <span class="SHKeyword">const</span></div>
 </div>
 
-<a name="cellConnected"></a><a name="Topic666"></a><div class="CTopic TFunction LC">
+<a name="cellConnected"></a><a name="Topic689"></a><div class="CTopic TFunction LC">
  <div class="CTitle">cellConnected</div>
- <div id="NDPrototype666" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> cellConnected()</div>
+ <div id="NDPrototype689" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> cellConnected()</div>
 </div>
 
-<a name="serverConnected"></a><a name="Topic667"></a><div class="CTopic TFunction LC">
+<a name="serverConnected"></a><a name="Topic690"></a><div class="CTopic TFunction LC">
  <div class="CTitle">serverConnected</div>
- <div id="NDPrototype667" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> serverConnected()</div>
+ <div id="NDPrototype690" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> serverConnected()</div>
 </div>
 
-<a name="dataEnabled"></a><a name="Topic668"></a><div class="CTopic TFunction LC last">
+<a name="dataEnabled"></a><a name="Topic691"></a><div class="CTopic TFunction LC">
  <div class="CTitle">dataEnabled</div>
- <div id="NDPrototype668" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> dataEnabled()</div>
+ <div id="NDPrototype691" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> dataEnabled()</div>
+</div>
+
+<a name="rssi"></a><a name="Topic692"></a><div class="CTopic TFunction LC">
+ <div class="CTitle">rssi</div>
+ <div id="NDPrototype692" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint8</span> rssi()</div>
+</div>
+
+<a name="signalQuality"></a><a name="Topic693"></a><div class="CTopic TFunction LC last">
+ <div class="CTitle">signalQuality</div>
+ <div id="NDPrototype693" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint8</span> signalQuality()</div>
 </div>
 
 </body></html>

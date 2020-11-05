@@ -1,1 +1,1 @@
-NDSearch.OnPrefixDataLoaded("ine",["Class"],[["InertialModels",,[[,,,,0,"File:MicroStrain/Inertial/InertialModels.h:InertialModels","CClass:InertialModels"]]],["InertialNode",,[[,,,,0,"File:MicroStrain/Inertial/InertialNode.h:InertialNode","CClass:InertialNode"]]]]);
+NDSearch.OnPrefixDataLoaded("ine",["Class"],[["InertialNode",,[[,,,,0,"File:MicroStrain/Inertial/InertialNode.h:InertialNode","CClass:InertialNode"]]]]);

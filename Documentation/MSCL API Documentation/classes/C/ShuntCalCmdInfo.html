@@ -8,61 +8,61 @@
 
 <body onload="NDLoader.OnLoad('Content');" class="NDPage NDContentPage">
 
-<a name="Topic1294"></a><div class="CTopic TStruct LC first">
+<a name="Topic1430"></a><div class="CTopic TStruct LC first">
  <div class="CTitle">ShuntCalCmdInfo</div>
  <div class="CBody"><p>Contains data for the shunt AutoCal command.</p></div>
 </div>
 
-<a name="useInternalShunt"></a><a name="Topic1295"></a><div class="CTopic TVariable LC">
+<a name="useInternalShunt"></a><a name="Topic1431"></a><div class="CTopic TVariable LC">
  <div class="CTitle">useInternalShunt</div>
- <div id="NDPrototype1295" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> useInternalShunt</div>
+ <div id="NDPrototype1431" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> useInternalShunt</div>
  <div class="CBody"><p>Whether the Shunt Cal should use an internal shunt (true), or external shunt (false).&nbsp; When using an internal shunt, the process will usually take under 1 second to complete.&nbsp; When using an external shunt, the process will take about 30 seconds and involves the node being sampled without the shunt applied, followed by an LED change indicating to apply the shunt.&nbsp; Please see the product documentation for more information.</p></div>
 </div>
 
-<a name="numActiveGauges"></a><a name="Topic1296"></a><div class="CTopic TVariable LC">
+<a name="numActiveGauges"></a><a name="Topic1432"></a><div class="CTopic TVariable LC">
  <div class="CTitle">numActiveGauges</div>
- <div id="NDPrototype1296" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint8</span> numActiveGauges</div>
+ <div id="NDPrototype1432" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint8</span> numActiveGauges</div>
  <div class="CBody"><p>The number of active gauges for the Shunt Cal command.</p></div>
 </div>
 
-<a name="gaugeResistance"></a><a name="Topic1297"></a><div class="CTopic TVariable LC">
+<a name="gaugeResistance"></a><a name="Topic1433"></a><div class="CTopic TVariable LC">
  <div class="CTitle">gaugeResistance</div>
- <div id="NDPrototype1297" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint16</span> gaugeResistance</div>
+ <div id="NDPrototype1433" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint16</span> gaugeResistance</div>
  <div class="CBody"><p>The gauge resistance for the Shunt Cal command.</p></div>
 </div>
 
-<a name="shuntResistance"></a><a name="Topic1298"></a><div class="CTopic TVariable LC">
+<a name="shuntResistance"></a><a name="Topic1434"></a><div class="CTopic TVariable LC">
  <div class="CTitle">shuntResistance</div>
- <div id="NDPrototype1298" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint32</span> shuntResistance</div>
+ <div id="NDPrototype1434" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint32</span> shuntResistance</div>
  <div class="CBody"><p>The shunt resistance for the Shunt Cal command.</p></div>
 </div>
 
-<a name="gaugeFactor"></a><a name="Topic1299"></a><div class="CTopic TVariable LC">
+<a name="gaugeFactor"></a><a name="Topic1435"></a><div class="CTopic TVariable LC">
  <div class="CTitle">gaugeFactor</div>
- <div id="NDPrototype1299" class="NDPrototype NoParameterForm"><span class="SHKeyword">float</span> gaugeFactor</div>
+ <div id="NDPrototype1435" class="NDPrototype NoParameterForm"><span class="SHKeyword">float</span> gaugeFactor</div>
  <div class="CBody"><p>The gauge factor for the Shunt Cal command.</p></div>
 </div>
 
-<a name="inputRange"></a><a name="Topic1300"></a><div class="CTopic TVariable LC">
+<a name="inputRange"></a><a name="Topic1436"></a><div class="CTopic TVariable LC">
  <div class="CTitle">inputRange</div>
- <div id="NDPrototype1300" class="NDPrototype NoParameterForm"><a href="../../index.html#CClass:WirelessTypes:InputRange" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,2745);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >WirelessTypes::InputRange</a> inputRange</div>
- <div class="CBody"><p>The <a href="../../index.html#CClass:WirelessTypes:InputRange" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,2745);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >WirelessTypes::InputRange</a> to use when performing the Shunt Cal command.</p></div>
+ <div id="NDPrototype1436" class="NDPrototype NoParameterForm"><a href="../../index.html#CClass:WirelessTypes:InputRange" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,2449);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >WirelessTypes::InputRange</a> inputRange</div>
+ <div class="CBody"><p>The <a href="../../index.html#CClass:WirelessTypes:InputRange" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,2449);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >WirelessTypes::InputRange</a> to use when performing the Shunt Cal command.</p></div>
 </div>
 
-<a name="hardwareOffset"></a><a name="Topic1301"></a><div class="CTopic TVariable LC">
+<a name="hardwareOffset"></a><a name="Topic1437"></a><div class="CTopic TVariable LC">
  <div class="CTitle">hardwareOffset</div>
- <div id="NDPrototype1301" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint16</span> hardwareOffset</div>
+ <div id="NDPrototype1437" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint16</span> hardwareOffset</div>
  <div class="CBody"><p>The hardware offset to use when performing the Shunt Cal command.</p></div>
 </div>
 
-<a name="excitationVoltage_"></a><a name="Topic1302"></a><div class="CTopic TVariable LC">
+<a name="excitationVoltage_"></a><a name="Topic1438"></a><div class="CTopic TVariable LC">
  <div class="CTitle">excitationVoltage;</div>
- <div class="CBody"><p>The excitation voltage of the Node when performing the Shunt Cal command.&nbsp; Note: This will only be used if the Node supports excitation voltage configuration (see <a href="../../index.html#CClass:NodeFeatures:supportsExcitationVoltageConfig" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1692);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >NodeFeatures::supportsExcitationVoltageConfig</a>).</p></div>
+ <div class="CBody"><p>The excitation voltage of the Node when performing the Shunt Cal command.&nbsp; Note: This will only be used if the Node supports excitation voltage configuration (see <a href="../../index.html#CClass:NodeFeatures:supportsExcitationVoltageConfig" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1850);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >NodeFeatures::supportsExcitationVoltageConfig</a>).</p></div>
 </div>
 
-<a name="ShuntCalCmdInfo"></a><a name="Topic1303"></a><div class="CTopic TFunction LC last">
+<a name="ShuntCalCmdInfo"></a><a name="Topic1439"></a><div class="CTopic TFunction LC last">
  <div class="CTitle">ShuntCalCmdInfo</div>
- <div id="NDPrototype1303" class="NDPrototype NoParameterForm">ShuntCalCmdInfo(): useInternalShunt(<span class="SHKeyword">true</span>), numActiveGauges(<span class="SHNumber">0</span>), gaugeResistance(<span class="SHNumber">0</span>), shuntResistance(<span class="SHNumber">0</span>), gaugeFactor(<span class="SHNumber">0.0f</span>), inputRange(WirelessTypes::range_1mV), hardwareOffset(<span class="SHNumber">0</span>), excitationVoltage(<a href="../../index.html#CClass:WirelessTypes:voltage_1500mV" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,2911);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >WirelessTypes::voltage_1500mV</a>)</div>
+ <div id="NDPrototype1439" class="NDPrototype NoParameterForm">ShuntCalCmdInfo(): useInternalShunt(<span class="SHKeyword">true</span>), numActiveGauges(<span class="SHNumber">0</span>), gaugeResistance(<span class="SHNumber">0</span>), shuntResistance(<span class="SHNumber">0</span>), gaugeFactor(<span class="SHNumber">0.0f</span>), inputRange(WirelessTypes::range_1mV), hardwareOffset(<span class="SHNumber">0</span>), excitationVoltage(<a href="../../index.html#CClass:WirelessTypes:voltage_1500mV" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,2615);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >WirelessTypes::voltage_1500mV</a>)</div>
  <div class="CBody"><p>Creates a default constructed ShuntCalCmdInfo object.</p></div>
 </div>
 

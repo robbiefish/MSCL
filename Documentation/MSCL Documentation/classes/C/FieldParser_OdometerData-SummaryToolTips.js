@@ -1,0 +1,1 @@
+NDSummary.OnToolTipsLoaded("CClass:FieldParser_OdometerData",{1099:"<div class=\"NDToolTip TClass LC\"><div class=\"NDClassPrototype\" id=\"NDClassPrototype1099\"><div class=\"CPEntry TClass Current\"><div class=\"CPName\">FieldParser_OdometerData</div></div></div><div class=\"TTSummary\">The field parser for the Odometer Data field.</div></div>"});
