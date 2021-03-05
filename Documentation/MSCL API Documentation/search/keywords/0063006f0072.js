@@ -1,1 +1,0 @@
-NDSearch.OnPrefixDataLoaded("cor",["Function"],[["correctionsTimedOut",,[["RTKDeviceStatusFlags",,,,0,"File:MicroStrain/Inertial/ExposedInertialTypes.h:RTKDeviceStatusFlags.correctionsTimedOut","CClass:RTKDeviceStatusFlags:correctionsTimedOut"]]]]);

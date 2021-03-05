@@ -8,53 +8,53 @@
 
 <body onload="NDLoader.OnLoad('Content');" class="NDPage NDContentPage">
 
-<a name="Topic718"></a><div class="CTopic TClass LC first">
+<a name="Topic758"></a><div class="CTopic TClass LC first">
  <div class="CTitle">OdometerConfiguration</div>
- <div class="NDClassPrototype" id="NDClassPrototype718"><div class="CPEntry TClass Current"><div class="CPName">OdometerConfiguration</div></div></div>
+ <div class="NDClassPrototype" id="NDClassPrototype758"><div class="CPEntry TClass Current"><div class="CPName">OdometerConfiguration</div></div></div>
 </div>
 
-<a name="Mode"></a><a name="Topic719"></a><div class="CTopic TEnumeration LC">
+<a name="Mode"></a><a name="Topic759"></a><div class="CTopic TEnumeration LC">
  <div class="CTitle">Mode</div>
  <div class="CBody"><p>Odometer mode options DISABLED&nbsp; - 0x00 - Encoder is disabled SINGLE&nbsp; - 0x01 - Single pulse input; one direction only QUADRATURE&nbsp; - 0x02 - Quadrature encoder mode</p></div>
 </div>
 
-<a name="mode"></a><a name="Topic720"></a><div class="CTopic TFunction LC">
+<a name="mode"></a><a name="Topic760"></a><div class="CTopic TFunction LC">
  <div class="CTitle">mode</div>
- <div id="NDPrototype720" class="NDPrototype NoParameterForm"><a href="../../index.html#CClass:OdometerConfiguration:Mode" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,719);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >Mode</a> mode() <span class="SHKeyword">const</span></div>
+ <div id="NDPrototype760" class="NDPrototype NoParameterForm"><a href="../../index.html#CClass:OdometerConfiguration:Mode" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,759);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >Mode</a> mode() <span class="SHKeyword">const</span></div>
  <div class="CBody"><p>Get/Set the mode</p></div>
 </div>
 
-<a name="uncertainty"></a><a name="Topic721"></a><div class="CTopic TFunction LC">
+<a name="uncertainty"></a><a name="Topic761"></a><div class="CTopic TFunction LC">
  <div class="CTitle">uncertainty</div>
- <div id="NDPrototype721" class="NDPrototype NoParameterForm"><span class="SHKeyword">float</span> uncertainty() <span class="SHKeyword">const</span></div>
+ <div id="NDPrototype761" class="NDPrototype NoParameterForm"><span class="SHKeyword">float</span> uncertainty() <span class="SHKeyword">const</span></div>
  <div class="CBody"><p>Get/Set the uncertainty (m/m)</p></div>
 </div>
 
-<a name="scaling"></a><a name="Topic722"></a><div class="CTopic TFunction LC">
+<a name="scaling"></a><a name="Topic762"></a><div class="CTopic TFunction LC">
  <div class="CTitle">scaling</div>
- <div id="NDPrototype722" class="NDPrototype NoParameterForm"><span class="SHKeyword">float</span> scaling() <span class="SHKeyword">const</span></div>
+ <div id="NDPrototype762" class="NDPrototype NoParameterForm"><span class="SHKeyword">float</span> scaling() <span class="SHKeyword">const</span></div>
  <div class="CBody"><p>Get/Set the scaling value directly (pulses per meter)</p></div>
 </div>
 
-<a name="scaling(2)"></a><a name="Topic723"></a><div class="CTopic TFunction LC">
+<a name="scaling(2)"></a><a name="Topic763"></a><div class="CTopic TFunction LC">
  <div class="CTitle">scaling</div>
- <div id="NDPrototype723" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">void</span> scaling(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PType first"><span class="SHKeyword">float</span>&nbsp;</td><td class="PName last">resolution,</td></tr><tr><td class="PType first"><span class="SHKeyword">float</span>&nbsp;</td><td class="PName last">radius</td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div>
+ <div id="NDPrototype763" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">void</span> scaling(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PType first"><span class="SHKeyword">float</span>&nbsp;</td><td class="PName last">resolution,</td></tr><tr><td class="PType first"><span class="SHKeyword">float</span>&nbsp;</td><td class="PName last">radius</td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div>
  <div class="CBody"><p>Set the scaling by specifying the encoder resolution and the wheel radius.&nbsp; Scaling = encoder resultion / (2pi * radius)</p><div class="CHeading">Parameters</div><table class="CDefinitionList"><tr><td class="CDLEntry">resolution<div class="CDLParameterType"><span class="SHKeyword">float</span></div></td><td class="CDLDefinition"><p>encoder resolution (pulses per revolution)</p></td></tr><tr><td class="CDLEntry">radius<div class="CDLParameterType"><span class="SHKeyword">float</span></div></td><td class="CDLDefinition"><p>wheel radius (meters)</p></td></tr></table><p>Note: 0 is an invalid value for both radius and resolution and will resulting in scaling = 0</p></div>
 </div>
 
-<a name="m_mode"></a><a name="Topic724"></a><div class="CTopic TVariable LC">
+<a name="m_mode"></a><a name="Topic764"></a><div class="CTopic TVariable LC">
  <div class="CTitle">m_mode</div>
- <div id="NDPrototype724" class="NDPrototype NoParameterForm"><a href="../../index.html#CClass:OdometerConfiguration:Mode" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,719);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >Mode</a> m_mode</div>
+ <div id="NDPrototype764" class="NDPrototype NoParameterForm"><a href="../../index.html#CClass:OdometerConfiguration:Mode" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,759);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >Mode</a> m_mode</div>
 </div>
 
-<a name="m_scaling"></a><a name="Topic725"></a><div class="CTopic TVariable LC">
+<a name="m_scaling"></a><a name="Topic765"></a><div class="CTopic TVariable LC">
  <div class="CTitle">m_scaling</div>
- <div id="NDPrototype725" class="NDPrototype NoParameterForm"><span class="SHKeyword">float</span> m_scaling</div>
+ <div id="NDPrototype765" class="NDPrototype NoParameterForm"><span class="SHKeyword">float</span> m_scaling</div>
 </div>
 
-<a name="m_unc"></a><a name="Topic726"></a><div class="CTopic TVariable LC last">
+<a name="m_unc"></a><a name="Topic766"></a><div class="CTopic TVariable LC last">
  <div class="CTitle">m_unc</div>
- <div id="NDPrototype726" class="NDPrototype NoParameterForm"><span class="SHKeyword">float</span> m_unc</div>
+ <div id="NDPrototype766" class="NDPrototype NoParameterForm"><span class="SHKeyword">float</span> m_unc</div>
 </div>
 
 </body></html>

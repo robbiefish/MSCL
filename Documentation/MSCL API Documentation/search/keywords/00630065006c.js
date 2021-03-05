@@ -1,1 +1,0 @@
-NDSearch.OnPrefixDataLoaded("cel",["Function"],[["cellConnected",,[["RTKDeviceStatusFlags",,,,0,"File:MicroStrain/Inertial/ExposedInertialTypes.h:RTKDeviceStatusFlags.cellConnected","CClass:RTKDeviceStatusFlags:cellConnected"]]]]);

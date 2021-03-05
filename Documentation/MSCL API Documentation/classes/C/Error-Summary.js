@@ -1,1 +1,1 @@
-NDFramePage.OnPageTitleLoaded("CClass:Error","Error");NDSummary.OnSummaryLoaded("CClass:Error",[["C/C++","C"]],[["Classes","Class"],["Functions","Function"]],[[3326,0,0,"Error"],[3327,0,1,"Error","Error"],[3328,0,1,"Error","Error(2)"],[3329,0,1,"what","what"]]);
+NDFramePage.OnPageTitleLoaded("CClass:Error","Error");NDSummary.OnSummaryLoaded("CClass:Error",[["C/C++","C"]],[["Classes","Class"],["Functions","Function"]],[[3376,0,0,"Error"],[3377,0,1,"Error","Error"],[3378,0,1,"Error","Error(2)"],[3379,0,1,"what","what"]]);

@@ -1,1 +1,1 @@
-NDFramePage.OnPageTitleLoaded("CClass:Reset_v2","Reset_v2");NDSummary.OnSummaryLoaded("CClass:Reset_v2",[["C/C++","C"]],[["Classes","Class"],["Functions","Function"],["Groups","Group"]],[[3523,0,0,"Reset_v2"],[3524,0,2,"Functions","Functions"],[3525,0,1,"buildCommand","buildCommand"]]);
+NDFramePage.OnPageTitleLoaded("CClass:Reset_v2","Reset_v2");NDSummary.OnSummaryLoaded("CClass:Reset_v2",[["C/C++","C"]],[["Classes","Class"],["Functions","Function"],["Groups","Group"]],[[3787,0,0,"Reset_v2"],[3788,0,2,"Functions","Functions"],[3789,0,1,"buildCommand","buildCommand"]]);
