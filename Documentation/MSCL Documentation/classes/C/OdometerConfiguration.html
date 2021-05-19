@@ -8,65 +8,65 @@
 
 <body onload="NDLoader.OnLoad('Content');" class="NDPage NDContentPage">
 
-<a name="Topic2317"></a><div class="CTopic TClass LC first">
+<a name="Topic2240"></a><div class="CTopic TClass LC first">
  <div class="CTitle">OdometerConfiguration</div>
- <div class="NDClassPrototype" id="NDClassPrototype2317"><div class="CPEntry TClass Current"><div class="CPName">OdometerConfiguration</div></div></div>
+ <div class="NDClassPrototype" id="NDClassPrototype2240"><div class="CPEntry TClass Current"><div class="CPName">OdometerConfiguration</div></div></div>
 </div>
 
-<a name="Types"></a><a name="Topic2318"></a><div class="CTopic TGroup LC">
+<a name="Types"></a><a name="Topic2241"></a><div class="CTopic TGroup LC">
  <div class="CTitle">Types</div>
 </div>
 
-<a name="Mode"></a><a name="Topic2319"></a><div class="CTopic TEnumeration LC">
+<a name="Mode"></a><a name="Topic2242"></a><div class="CTopic TEnumeration LC">
  <div class="CTitle">Mode</div>
  <div class="CBody"><p>Odometer mode options DISABLED&nbsp; - 0x00 - Encoder is disabled SINGLE&nbsp; - 0x01 - Single pulse input; one direction only QUADRATURE&nbsp; - 0x02 - Quadrature encoder mode</p></div>
 </div>
 
-<a name="Functions"></a><a name="Topic2320"></a><div class="CTopic TGroup LC">
+<a name="Functions"></a><a name="Topic2243"></a><div class="CTopic TGroup LC">
  <div class="CTitle">Functions</div>
 </div>
 
-<a name="mode"></a><a name="Topic2321"></a><div class="CTopic TFunction LC">
+<a name="mode"></a><a name="Topic2244"></a><div class="CTopic TFunction LC">
  <div class="CTitle">mode</div>
- <div id="NDPrototype2321" class="NDPrototype NoParameterForm"><a href="../../index.html#CClass:OdometerConfiguration:Mode" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,2319);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >Mode</a> mode() <span class="SHKeyword">const</span></div>
+ <div id="NDPrototype2244" class="NDPrototype NoParameterForm"><a href="../../index.html#CClass:OdometerConfiguration:Mode" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,2242);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >Mode</a> mode() <span class="SHKeyword">const</span></div>
  <div class="CBody"><p>Get/Set the mode</p></div>
 </div>
 
-<a name="uncertainty"></a><a name="Topic2322"></a><div class="CTopic TFunction LC">
+<a name="uncertainty"></a><a name="Topic2245"></a><div class="CTopic TFunction LC">
  <div class="CTitle">uncertainty</div>
- <div id="NDPrototype2322" class="NDPrototype NoParameterForm"><span class="SHKeyword">float</span> uncertainty() <span class="SHKeyword">const</span></div>
+ <div id="NDPrototype2245" class="NDPrototype NoParameterForm"><span class="SHKeyword">float</span> uncertainty() <span class="SHKeyword">const</span></div>
  <div class="CBody"><p>Get/Set the uncertainty (m/m)</p></div>
 </div>
 
-<a name="scaling"></a><a name="Topic2323"></a><div class="CTopic TFunction LC">
+<a name="scaling"></a><a name="Topic2246"></a><div class="CTopic TFunction LC">
  <div class="CTitle">scaling</div>
- <div id="NDPrototype2323" class="NDPrototype NoParameterForm"><span class="SHKeyword">float</span> scaling() <span class="SHKeyword">const</span></div>
+ <div id="NDPrototype2246" class="NDPrototype NoParameterForm"><span class="SHKeyword">float</span> scaling() <span class="SHKeyword">const</span></div>
  <div class="CBody"><p>Get/Set the scaling value directly (pulses per meter)</p></div>
 </div>
 
-<a name="scaling(2)"></a><a name="Topic2324"></a><div class="CTopic TFunction LC">
+<a name="scaling(2)"></a><a name="Topic2247"></a><div class="CTopic TFunction LC">
  <div class="CTitle">scaling</div>
- <div id="NDPrototype2324" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">void</span> scaling(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PType first"><span class="SHKeyword">float</span>&nbsp;</td><td class="PName last">resolution,</td></tr><tr><td class="PType first"><span class="SHKeyword">float</span>&nbsp;</td><td class="PName last">radius</td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div>
+ <div id="NDPrototype2247" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">void</span> scaling(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PType first"><span class="SHKeyword">float</span>&nbsp;</td><td class="PName last">resolution,</td></tr><tr><td class="PType first"><span class="SHKeyword">float</span>&nbsp;</td><td class="PName last">radius</td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div>
  <div class="CBody"><p>Set the scaling by specifying the encoder resolution and the wheel radius.&nbsp; Scaling = encoder resultion / (2pi * radius)</p><div class="CHeading">Parameters</div><table class="CDefinitionList"><tr><td class="CDLEntry">resolution<div class="CDLParameterType"><span class="SHKeyword">float</span></div></td><td class="CDLDefinition"><p>encoder resolution (pulses per revolution)</p></td></tr><tr><td class="CDLEntry">radius<div class="CDLParameterType"><span class="SHKeyword">float</span></div></td><td class="CDLDefinition"><p>wheel radius (meters)</p></td></tr></table><p>Note: 0 is an invalid value for both radius and resolution and will resulting in scaling = 0</p></div>
 </div>
 
-<a name="Variables"></a><a name="Topic2325"></a><div class="CTopic TGroup LC">
+<a name="Variables"></a><a name="Topic2248"></a><div class="CTopic TGroup LC">
  <div class="CTitle">Variables</div>
 </div>
 
-<a name="m_mode"></a><a name="Topic2326"></a><div class="CTopic TVariable LC">
+<a name="m_mode"></a><a name="Topic2249"></a><div class="CTopic TVariable LC">
  <div class="CTitle">m_mode</div>
- <div id="NDPrototype2326" class="NDPrototype NoParameterForm"><a href="../../index.html#CClass:OdometerConfiguration:Mode" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,2319);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >Mode</a> m_mode</div>
+ <div id="NDPrototype2249" class="NDPrototype NoParameterForm"><a href="../../index.html#CClass:OdometerConfiguration:Mode" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,2242);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >Mode</a> m_mode</div>
 </div>
 
-<a name="m_scaling"></a><a name="Topic2327"></a><div class="CTopic TVariable LC">
+<a name="m_scaling"></a><a name="Topic2250"></a><div class="CTopic TVariable LC">
  <div class="CTitle">m_scaling</div>
- <div id="NDPrototype2327" class="NDPrototype NoParameterForm"><span class="SHKeyword">float</span> m_scaling</div>
+ <div id="NDPrototype2250" class="NDPrototype NoParameterForm"><span class="SHKeyword">float</span> m_scaling</div>
 </div>
 
-<a name="m_unc"></a><a name="Topic2328"></a><div class="CTopic TVariable LC last">
+<a name="m_unc"></a><a name="Topic2251"></a><div class="CTopic TVariable LC last">
  <div class="CTitle">m_unc</div>
- <div id="NDPrototype2328" class="NDPrototype NoParameterForm"><span class="SHKeyword">float</span> m_unc</div>
+ <div id="NDPrototype2251" class="NDPrototype NoParameterForm"><span class="SHKeyword">float</span> m_unc</div>
 </div>
 
 </body></html>
