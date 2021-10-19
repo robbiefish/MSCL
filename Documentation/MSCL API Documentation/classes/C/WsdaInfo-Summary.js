@@ -1,1 +1,1 @@
-NDFramePage.OnPageTitleLoaded("CClass:WsdaInfo","WsdaInfo");NDSummary.OnSummaryLoaded("CClass:WsdaInfo",[["C/C++","C"]],[["Classes","Class"],["Functions","Function"]],[[44,0,0,"WsdaInfo"],[45,0,1,"ipAddress","ipAddress"],[46,0,1,"port","port"],[47,0,1,"name","name"]]);
+NDFramePage.OnPageTitleLoaded("CClass:WsdaInfo","WsdaInfo");NDSummary.OnSummaryLoaded("CClass:WsdaInfo",[["C/C++","C"]],[["Classes","Class"],["Functions","Function"]],[[9,0,0,"WsdaInfo"],[10,0,1,"ipAddress","ipAddress"],[11,0,1,"port","port"],[12,0,1,"name","name"]]);
