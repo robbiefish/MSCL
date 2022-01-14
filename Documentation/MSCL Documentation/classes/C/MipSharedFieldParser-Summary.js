@@ -1,1 +1,1 @@
-NDFramePage.OnPageTitleLoaded("CClass:MipSharedFieldParser","MipSharedFieldParser");NDSummary.OnSummaryLoaded("CClass:MipSharedFieldParser",[["C/C++","C"]],[["Classes","Class"]],[[1055,0,0,"MipSharedFieldParser"]]);
+NDFramePage.OnPageTitleLoaded("CClass:MipSharedFieldParser","MipSharedFieldParser");NDSummary.OnSummaryLoaded("CClass:MipSharedFieldParser",[["C/C++","C"]],[["Classes","Class"]],[[1054,0,0,"MipSharedFieldParser"]]);
