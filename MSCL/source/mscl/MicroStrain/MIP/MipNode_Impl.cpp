@@ -365,7 +365,7 @@ namespace mscl
         {
             return false;
         }
-    }
+	}
 
     void MipNode_Impl::resume()
     {
@@ -381,15 +381,6 @@ namespace mscl
         // if combined command supported, use that
         if (features().supportsCommand(MipTypes::Command::CMD_SAVE_STARTUP_SETTINGS))
         {
-            uint64 tempTimeout = timeout();
-
-            //when this goes out of scope, it will write back the original timeout (need cast for overloaded ambiguity)
-            ScopeHelper writebackTimeout(std::bind(static_cast<void(MipNode_Impl::*)(uint64)>(&MipNode_Impl::timeout), this, tempTimeout));
-
-            //change the timeout to a minimum of 2.5s
-            Utils::checkBounds_min(tempTimeout, static_cast<uint64>(2500));
-            timeout(tempTimeout);
-
             DeviceStartupSettings::Response r(m_responseCollector);
             doCommand(r, DeviceStartupSettings::buildCommand_saveAsStartup(), false);
             return;
@@ -425,15 +416,6 @@ namespace mscl
 
     void MipNode_Impl::loadFactoryDefaultSettings()
     {
-        uint64 tempTimeout = timeout();
-
-        //when this goes out of scope, it will write back the original timeout (need cast for overloaded ambiguity)
-        ScopeHelper writebackTimeout(std::bind(static_cast<void(MipNode_Impl::*)(uint64)>(&MipNode_Impl::timeout), this, tempTimeout));
-
-        //change the timeout to a minimum of 1200
-        Utils::checkBounds_min(tempTimeout, static_cast<uint64>(1200));
-        timeout(tempTimeout);
-
         DeviceStartupSettings::Response r(m_responseCollector);
 
         doCommand(r, DeviceStartupSettings::buildCommand_loadDefault(), false);
@@ -511,6 +493,71 @@ namespace mscl
         }
 
         return receivers;
+    }
+
+    SupportedSensorRanges MipNode_Impl::getSupportedSensorRanges() const
+    {
+        const SensorRange::Type sensorTypes[] = {
+            SensorRange::ACCEL_G,
+            SensorRange::GYRO_DPS,
+            SensorRange::MAG_GAUSS,
+            SensorRange::PRESSURE_HPA
+        };
+
+        const uint8 FIRST_RANGE_INDEX = 2;
+        const uint8 RANGE_ENTRY_SIZE = 2;
+        SupportedSensorRanges supported;
+
+        if (!features().supportsCommand(MipTypes::Command::CMD_SUPPORTED_SENSOR_RANGES))
+        {
+            return supported;
+        }
+
+        for (SensorRange::Type type : sensorTypes)
+        {
+            try
+            {
+                MipFieldValues ret = get(MipTypes::Command::CMD_SUPPORTED_SENSOR_RANGES, { Value::UINT8(static_cast<uint8>(type)) });
+
+                if (ret.size() < FIRST_RANGE_INDEX)
+                {
+                    continue;
+                }
+
+                uint8 count = ret[1].as_uint8();
+                size_t minSize = (FIRST_RANGE_INDEX + (count * RANGE_ENTRY_SIZE));
+                if (ret.size() < minSize)
+                {
+                    continue;
+                }
+
+                SensorRanges typeRanges;
+                for (size_t i = 0; i < count; i++)
+                {
+                    size_t index = FIRST_RANGE_INDEX + (i * RANGE_ENTRY_SIZE);
+
+                    // 1-indexed option id
+                    uint8 optionId = ret[index].as_uint8();
+
+                    // range value
+                    float range = ret[index + 1].as_float();
+
+                    //add to list
+                    typeRanges.push_back(SensorRange(type, optionId, range));
+                }
+
+                if (typeRanges.size() <= 0)
+                {
+                    continue;
+                }
+
+                supported.m_options.emplace(type, typeRanges);
+            }
+            catch(const Error_MipCmdFailed&)
+            {/*ignore*/ }
+        }
+
+        return supported;
     }
 
     std::vector<uint16> MipNode_Impl::getDescriptorSets() const
@@ -1053,6 +1100,23 @@ namespace mscl
                     }
 
                     MipCommandBytes cmdBytes = buildMipCommandBytes(cmd, pins);
+
+                    if (cmdBytes.valid())
+                    {
+                        setCmds.push_back(cmdBytes);
+                    }
+                    break;
+                }
+                case MipTypes::CMD_SENSOR_RANGE:
+                {
+                    SupportedSensorRanges supportedRanges = features().supportedSensorRanges();
+                    std::vector<MipFieldValues> types;
+                    for (auto& kv : supportedRanges.options())
+                    {
+                        types.push_back({ Value::UINT8(static_cast<uint8>(kv.first)) });
+                    }
+
+                    MipCommandBytes cmdBytes = buildMipCommandBytes(cmd, types);
 
                     if (cmdBytes.valid())
                     {

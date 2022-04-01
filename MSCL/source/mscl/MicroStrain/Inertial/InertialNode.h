@@ -1981,6 +1981,46 @@ namespace mscl
         //    - <Error_Connection>: A connection error has occurred with the InertialNode.
         void setOdometerConfig(OdometerConfiguration config);
 
+        //API Function: getSensorRange
+        //    Gets the currently configured sensor range for the specified sensor (accelerometer, gyroscope, etc.).
+        //
+        //Return:
+        //    <SensorRange> - The currently configured sensor range for the specified sensor
+        //
+        //Exceptions:
+        //    - <Error_NotSupported>: The command is not supported by this Node.
+        //    - <Error_Communication>: There was no response to the command. The command timed out.
+        //    - <Error_MipCmdFailed>: The command has failed. Check the error code for more details.
+        //    - <Error_Connection>: A connection error has occurred with the InertialNode.
+        SensorRange getSensorRange(SensorRange::Type sensorRangeType) const;
+
+        //API Function: setSensorRange
+        //    Set the specified sensor range. This will only work with a <SensorRange> object from the device features <SupportedSensorRanges> object or read from the device with getSensorRange.
+        //
+        //Parameter:
+        //    range - the <SensorRange> to apply
+        //
+        //Exceptions:
+        //    - <Error_NotSupported>: The command is not supported by this Node.
+        //    - <Error_Communication>: There was no response to the command. The command timed out.
+        //    - <Error_MipCmdFailed>: The command has failed. Check the error code for more details.
+        //    - <Error_Connection>: A connection error has occurred with the InertialNode.
+        void setSensorRange(SensorRange range);
+
+        //API Function: setSensorRange
+        //    Set the specified sensor range to the range ID - you can find these IDs in the device manual or look them up from the device features <SupportedSensorRanges> object.
+        //
+        //Parameter:
+        //    type - the <SensorRange::Type> to set
+        //    rangeId - the id representing a range value to apply
+        //
+        //Exceptions:
+        //    - <Error_NotSupported>: The command is not supported by this Node.
+        //    - <Error_Communication>: There was no response to the command. The command timed out.
+        //    - <Error_MipCmdFailed>: The command has failed. Check the error code for more details.
+        //    - <Error_Connection>: A connection error has occurred with the InertialNode.
+        void setSensorRange(SensorRange::Type type, uint8 rangeId);
+
         //API Function: getGpioConfig
         //    Gets the currently configured GPIO settings.
         //
