@@ -2803,4 +2803,153 @@ namespace mscl
     //API Typedef: GpioPinOptions
     // A map of uint GPIO pin ID, <GpioFeatureBehaviors> pairs
     typedef std::map<uint8, GpioFeatureBehaviors> GpioPinOptions;
+
+
+
+	/* Possible scenarios:
+	* A B C D -- (A B) C D -- (A B C) D    <-- Simple
+	* A (B C) D -- A B (C D) -- A (B C D)  <-- check position of rhs combo before lhs single. rhs.position != 0
+	* (A B) (C D)                          <-- table[0] and table[1] used on both sides
+	*
+	* First time combos overload returns secondary struct with positions set
+	* Second time around should just calculate the values since they'll be different types
+	*
+	* A B          <-- returns type2
+	* A type2      <-- evaluate type2 (returns uint16)     <-- returns new type2 with A included
+	* type2 B      <-- evaluate type2 (returns uint16)     <-- returns new type2 with B included
+	* type2 type2  <-- increment rhs type2 positions       <-- evaluate everything all together    <-- returns uint16
+	*
+	*
+	* (A B) C D    <-- (A B) = type2 then (type2 C)        <-- Similar for (A B C) D
+	*  A (B C) D   <-- (B C) C   <-- Evaluated like above
+	* A (B C) D -- A B (C D) -- A (B C D)  <-- check position of rhs combo before lhs single. rhs.position != 0
+	* (A B) (C D)                          <-- table[0] and table[1] used on both sides
+	*/
+	struct LogicPair;
+	struct LogicBeforePair;
+	struct LogicAfterPair;
+	struct LogicDoublePair;
+
+	struct LogicTable
+	{
+		// Bitwise operators in order of precedence
+		LogicPair operator&(const LogicTable& _rhs) const;
+		LogicPair operator^(const LogicTable& _rhs) const;
+		LogicPair operator|(const LogicTable& _rhs) const;
+
+		LogicBeforePair operator&(const LogicPair& _rhs) const;
+		LogicBeforePair operator^(const LogicPair& _rhs) const;
+		LogicBeforePair operator|(const LogicPair& _rhs) const;
+
+		// Final values
+		uint16 operator&(const LogicBeforePair& _rhs) const;
+		uint16 operator^(const LogicBeforePair& _rhs) const;
+		uint16 operator|(const LogicBeforePair& _rhs) const;
+
+		// Final values
+		uint16 operator&(const LogicAfterPair& _rhs) const;
+		uint16 operator^(const LogicAfterPair& _rhs) const;
+		uint16 operator|(const LogicAfterPair& _rhs) const;
+
+		void operator~() { negate = !negate; }
+
+		explicit operator uint16() const;
+
+		enum Operand
+		{
+			NONE = 0x00,
+			AND = 0x01,
+			XOR = 0x02,
+			OR = 0x03,
+			NAND = 0x04,
+			XNOR = 0x05,
+			NOR = 0x06
+		};
+
+		// Get the table value represented at the index
+		uint16 getValue(uint8 _index) const;
+
+	private:
+		bool negate = false;
+
+		static constexpr uint16 table[4] = {
+			0xAAAA, // 1010 1010 1010 1010
+			0xCCCC, // 1100 1100 1100 1100
+			0xF0F0, // 1111 0000 1111 0000
+			0xFF00  // 1111 1111 0000 0000
+		};
+
+		uint16 combine(const LogicBeforePair& _rhs, Operand _operand) const;
+		uint16 combine(const LogicAfterPair& _rhs, Operand _operand) const;
+	};
+
+	static void negateOperand(LogicTable::Operand& _operand);
+
+	struct LogicPair
+	{
+		void operator~() { negateOperand(operand); }
+
+		LogicAfterPair operator&(const LogicTable& _rhs) const;
+		LogicAfterPair operator^(const LogicTable& _rhs) const;
+		LogicAfterPair operator|(const LogicTable& _rhs) const;
+
+		uint16 operator&(const LogicPair& _rhs) const;
+		uint16 operator^(const LogicPair& _rhs) const;
+		uint16 operator|(const LogicPair& _rhs) const;
+
+		// Assumes only 2 triggers are used
+		explicit operator uint16() const;
+
+		static uint16 combine(uint16 _firstValue, uint16 _secondValue, LogicTable::Operand _operand);
+
+		uint16 combine(uint8 _firstIndex) const;
+
+		LogicTable::Operand operand;
+		LogicTable first;
+		LogicTable second;
+	};
+
+	struct LogicBeforePair
+	{
+		void operator~() { negateOperand(operand); }
+
+		// Final values
+		uint16 operator&(const LogicTable& _rhs) const;
+		uint16 operator^(const LogicTable& _rhs) const;
+		uint16 operator|(const LogicTable& _rhs) const;
+
+		// Assumes only 3 triggers are used
+		explicit operator uint16() const;
+
+		LogicTable::Operand operand;
+		LogicTable first;
+		LogicPair second;
+
+		uint16 combine(uint8 _firstIndex) const;
+
+	private:
+		uint16 combine(const LogicTable& _rhs, LogicTable::Operand _operand) const;
+	};
+
+	struct LogicAfterPair
+	{
+		void operator~() { negateOperand(operand); }
+
+		// Final values
+		uint16 operator&(const LogicTable& _rhs) const;
+		uint16 operator^(const LogicTable& _rhs) const;
+		uint16 operator|(const LogicTable& _rhs) const;
+
+		// Assumes only 3 triggers are used
+		explicit operator uint16() const;
+
+		LogicTable::Operand operand;
+		LogicPair first;
+		LogicTable second;
+
+		uint16 combine(uint8 _firstIndex) const;
+
+	private:
+		uint16 combine(const LogicTable& _rhs, LogicTable::Operand _operand) const;
+	};
 }

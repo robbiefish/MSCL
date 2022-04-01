@@ -979,4 +979,346 @@ namespace mscl
 
         m_unc = unc;
     }
+
+	// LogicTable & LogicTable, first iteration
+	LogicPair LogicTable::operator&(const LogicTable& _rhs) const
+	{
+		return{ AND, *this, _rhs };
+	}
+
+	// LogicTable ^ LogicTable, first iteration
+	LogicPair LogicTable::operator^(const LogicTable& _rhs) const
+	{
+		return{ XOR, *this, _rhs };
+	}
+
+	// LogicTable | LogicTable, first iteration
+	LogicPair LogicTable::operator|(const LogicTable& _rhs) const
+	{
+		return{ OR,  *this, _rhs };
+	}
+
+	// LogicTable & LogicPair, second iteration
+	LogicBeforePair LogicTable::operator&(const LogicPair& _rhs) const
+	{
+		return{ AND, *this, _rhs };
+	}
+
+	// LogicTable ^ LogicPair, second iteration
+	LogicBeforePair LogicTable::operator^(const LogicPair& _rhs) const
+	{
+		return{ XOR, *this, _rhs };
+	}
+
+	// LogicTable | LogicPair, second iteration
+	LogicBeforePair LogicTable::operator|(const LogicPair& _rhs) const
+	{
+		return{ OR,  *this, _rhs };
+	}
+
+	// LogicTable & LogicBeforePair, final iteration
+	uint16 LogicTable::operator&(const LogicBeforePair& _rhs) const
+	{
+		return combine(_rhs, AND);
+	}
+
+	// LogicTable ^ LogicBeforePair, final iteration
+	uint16 LogicTable::operator^(const LogicBeforePair& _rhs) const
+	{
+		return combine(_rhs, XOR);
+	}
+
+	// LogicTable | LogicBeforePair, final iteration
+	uint16 LogicTable::operator|(const LogicBeforePair& _rhs) const
+	{
+		return combine(_rhs, OR);
+	}
+
+	// LogicTable & LogicAfterPair, final iteration
+	uint16 LogicTable::operator&(const LogicAfterPair& _rhs) const
+	{
+		return combine(_rhs, AND);
+	}
+
+	// LogicTable ^ LogicAfterPair, final iteration
+	uint16 LogicTable::operator^(const LogicAfterPair& _rhs) const
+	{
+		return combine(_rhs, XOR);
+	}
+
+	// LogicTable | LogicAfterPair, final iteration
+	uint16 LogicTable::operator|(const LogicAfterPair& _rhs) const
+	{
+		return combine(_rhs, OR);
+	}
+
+	// Assumes only one trigger is used
+	LogicTable::operator uint16() const
+	{
+		return table[0];
+	}
+
+	// Get the table value represented at the index
+	uint16 LogicTable::getValue(const uint8 _index) const
+	{
+		if (_index > 3)
+		{
+			throw std::out_of_range("Logic table index cannot be greater than 3");
+		}
+
+		uint16 value = table[_index];
+
+		if (negate)
+		{
+			value = ~value;
+		}
+
+		return value;
+	}
+
+	// Combine 
+	uint16 LogicTable::combine(const LogicBeforePair& _rhs, Operand _operand) const
+	{
+		// Get the first value
+		const uint16 firstValue = getValue(0);
+		// Combine the last 3 values
+		const uint16 secondValue = _rhs.combine(1);
+
+		return LogicPair::combine(firstValue, secondValue, _operand);
+	}
+
+	uint16 LogicTable::combine(const LogicAfterPair& _rhs, Operand _operand) const
+	{
+		// Get the first value
+		const uint16 firstValue = getValue(0);
+		// Combine the last 3 values
+		const uint16 secondValue = _rhs.combine(1);
+
+		return LogicPair::combine(firstValue, secondValue, _operand);
+	}
+
+	void negateOperand(LogicTable::Operand& _operand)
+	{
+		switch (_operand)
+		{
+		case LogicTable::AND:
+			_operand = LogicTable::NAND;
+			break;
+		case LogicTable::OR:
+			_operand = LogicTable::NOR;
+			break;
+		case LogicTable::XOR:
+			_operand = LogicTable::XNOR;
+			break;
+		case LogicTable::NAND:
+			_operand = LogicTable::AND;
+			break;
+		case LogicTable::NOR:
+			_operand = LogicTable::OR;
+			break;
+		case LogicTable::XNOR:
+			_operand = LogicTable::XOR;
+			break;
+		default:
+			throw std::exception("Invalid operand");
+		}
+	}
+
+	// LogicPair & LogicTable, second iteration
+	LogicAfterPair LogicPair::operator&(const LogicTable& _rhs) const
+	{
+		return{ LogicTable::AND, *this, _rhs };
+	}
+
+	// LogicPair ^ LogicTable, second iteration
+	LogicAfterPair LogicPair::operator^(const LogicTable& _rhs) const
+	{
+		return{ LogicTable::XOR, *this, _rhs };
+	}
+
+	// LogicPair | LogicTable, second iteration
+	LogicAfterPair LogicPair::operator|(const LogicTable& _rhs) const
+	{
+		return{ LogicTable::OR,  *this, _rhs };
+	}
+
+	// LogicPair & LogicPair, final iteration
+	uint16 LogicPair::operator&(const LogicPair& _rhs) const
+	{
+		// Combine the first 2 values
+		const uint16 firstValue = combine(0);
+		// Combine the second 2 values
+		const uint16 secondValue = _rhs.combine(2);
+
+		return combine(firstValue, secondValue, LogicTable::AND);
+	}
+
+	// LogicPair ^ LogicPair, final iteration
+	uint16 LogicPair::operator^(const LogicPair& _rhs) const
+	{
+		// Combine the first 2 values
+		const uint16 firstValue = combine(0);
+		// Combine the second 2 values
+		const uint16 secondValue = _rhs.combine(2);
+
+		return combine(firstValue, secondValue, LogicTable::XOR);
+	}
+
+	// LogicPair | LogicPair, final iteration
+	uint16 LogicPair::operator|(const LogicPair& _rhs) const
+	{
+		// Combine the first 2 values
+		const uint16 firstValue = combine(0);
+		// Combine the second 2 values
+		const uint16 secondValue = _rhs.combine(2);
+
+		return combine(firstValue, secondValue, LogicTable::OR);
+	}
+
+	// Assumes only 2 triggers are used
+	LogicPair::operator uint16() const
+	{
+		const uint16 firstValue = first.getValue(0);
+		const uint16 secondValue = second.getValue(1);
+
+		return combine(firstValue, secondValue, operand);
+	}
+
+	uint16 LogicPair::combine(const uint16 _firstValue, const uint16 _secondValue, const LogicTable::Operand _operand)
+	{
+		switch (_operand)
+		{
+		case LogicTable::AND:
+			return _firstValue & _secondValue;
+		case LogicTable::XOR:
+			return _firstValue ^ _secondValue;
+		case LogicTable::OR:
+			return _firstValue | _secondValue;
+		case LogicTable::NAND:
+			return ~(_firstValue & _secondValue);
+		case LogicTable::XNOR:
+			return ~(_firstValue ^ _secondValue);
+		case LogicTable::NOR:
+			return ~(_firstValue | _secondValue);
+		default:
+			throw std::exception("Invalid operand");
+		}
+	}
+
+	// Combine 2 values given the starting index. Indices are in consecutive order
+	uint16 LogicPair::combine(uint8 _firstIndex) const
+	{
+		// Indices are consecutive starting with _firstIndex
+		if (_firstIndex > 2)
+		{
+			throw std::out_of_range("Table indices cannot be greater than 3");
+		}
+
+		const uint16 firstValue = first.getValue(_firstIndex);
+		const uint16 secondValue = second.getValue(++_firstIndex);
+
+		return combine(firstValue, secondValue, operand);
+	}
+
+	// LogicBeforePair & LogicTable, final iteration
+	uint16 LogicBeforePair::operator&(const LogicTable& _rhs) const
+	{
+		return combine(_rhs, LogicTable::AND);
+	}
+
+	// LogicBeforePair ^ LogicTable, final iteration
+	uint16 LogicBeforePair::operator^(const LogicTable& _rhs) const
+	{
+		return combine(_rhs, LogicTable::XOR);
+	}
+
+	// LogicBeforePair | LogicTable, final iteration
+	uint16 LogicBeforePair::operator|(const LogicTable& _rhs) const
+	{
+		return combine(_rhs, LogicTable::OR);
+	}
+
+	// Assumes only 3 triggers are used
+	LogicBeforePair::operator uint16() const
+	{
+		return combine(0);
+	}
+
+	uint16 LogicBeforePair::combine(uint8 _firstIndex) const
+	{
+		// Indices are consecutive starting with _firstIndex
+		if (_firstIndex > 1)
+		{
+			throw std::out_of_range("Table indices cannot be greater than 3");
+		}
+
+		// Get the first value at the index
+		const uint16 firstValue = first.getValue(_firstIndex);
+		// Get the next 2 consecutive values
+		const uint16 secondValue = second.combine(++_firstIndex);
+
+		return LogicPair::combine(firstValue, secondValue, operand);
+	}
+
+	uint16 LogicBeforePair::combine(const LogicTable& _rhs, const LogicTable::Operand _operand) const
+	{
+		// Combine the first 3 values
+		const uint16 firstValue = combine(0);
+		// Get the last value
+		const uint16 secondValue = _rhs.getValue(3);
+
+		return LogicPair::combine(firstValue, secondValue, _operand);
+	}
+
+	// LogicAfterPair & LogicTable, final iteration
+	uint16 LogicAfterPair::operator&(const LogicTable& _rhs) const
+	{
+		return combine(_rhs, LogicTable::AND);
+	}
+
+	// LogicAfterPair ^ LogicTable, final iteration
+	uint16 LogicAfterPair::operator^(const LogicTable& _rhs) const
+	{
+		return combine(_rhs, LogicTable::XOR);
+	}
+
+	// LogicAfterPair | LogicTable, final iteration
+	uint16 LogicAfterPair::operator|(const LogicTable& _rhs) const
+	{
+		return combine(_rhs, LogicTable::OR);
+	}
+
+	// Assumes only 3 triggers are used
+	LogicAfterPair::operator uint16() const
+	{
+		return combine(0);
+	}
+
+	// Combine all 3 values
+	uint16 LogicAfterPair::combine(const uint8 _firstIndex) const
+	{
+		// Indices are consecutive starting with _firstIndex
+		if (_firstIndex > 1)
+		{
+			throw std::out_of_range("Table indices cannot be greater than 3");
+		}
+
+		// Get the first 2 consecutive values at the index
+		const uint16 firstValue = first.combine(_firstIndex);
+		// Get the third consecutive value
+		const uint16 secondValue = second.getValue(_firstIndex + 2);
+
+		return LogicPair::combine(firstValue, secondValue, operand);
+	}
+
+	// Combine the first 3 values with the last one
+	uint16 LogicAfterPair::combine(const LogicTable& _rhs, const LogicTable::Operand _operand) const
+	{
+		// Combine the first 3 values
+		const uint16 firstValue = combine(0);
+		// Get the last value
+		const uint16 secondValue = _rhs.getValue(3);
+
+		return LogicPair::combine(firstValue, secondValue, _operand);
+	}
 }  // namespace mscl
